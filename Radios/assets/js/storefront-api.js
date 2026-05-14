@@ -7378,6 +7378,147 @@
     };
   }
 
+  function buildOrderNumber() {
+    var datePart = new Date().toISOString().slice(0, 10).replace(/-/g, "");
+    var randomPart = Math.random().toString(36).slice(2, 8).toUpperCase();
+    return "RAD-" + datePart + "-" + randomPart;
+  }
+
+  function buildSupabaseOrderItems(orderId, cart) {
+    return (cart || []).map(function (item) {
+      var productId = item.productId || item.product_id || item.id || "";
+      var quantity = Math.max(1, Number(item.quantity) || 1);
+      var price = readNumberValue(item.price, 0);
+
+      return {
+        order_id: orderId,
+        product_id: isUuid(productId) ? productId : null,
+        product_name: item.name || item.title || "Product",
+        quantity: quantity,
+        price: price,
+        total: price * quantity
+      };
+    });
+  }
+
+  function createSupabaseOrder(customer, cart, pricing, selectedDiscount) {
+    var client = getSupabaseClient();
+    if (!client) {
+      return Promise.reject(new Error("Supabase is not configured for order creation."));
+    }
+
+    var identity = buildTrackedCartCustomer(customer);
+    var orderNumber = buildOrderNumber();
+    var customerName = [customer.firstName, customer.lastName].filter(Boolean).join(" ").trim() || identity.name || "Guest Customer";
+    var discountCode = selectedDiscount && selectedDiscount.code
+      ? String(selectedDiscount.code).toUpperCase()
+      : readAppliedDiscountCode();
+    var inventoryPayload = buildInventoryCartPayload(cart);
+    var authUserId = "";
+    var orderRow = null;
+
+    return getCurrentAuthUser()
+      .then(function (user) {
+        authUserId = user && user.id ? user.id : (isUuid(identity.authUserId) ? identity.authUserId : "");
+
+        return client
+          .from("orders")
+          .insert({
+            order_number: orderNumber,
+            tracking_id: orderNumber,
+            tracking_status: "Order Placed",
+            auth_user_id: authUserId || null,
+            customer_id: isUuid(identity.customerId) ? identity.customerId : null,
+            customer_name: customerName,
+            customer_email: customer.email || identity.email || "",
+            customer_phone: customer.phone || identity.phone || "",
+            delivery_address: [customer.addressLine1, customer.addressLine2].filter(Boolean).join(", "),
+            city: customer.city || "",
+            state: customer.state || "",
+            country: customer.country || "India",
+            pincode: customer.zipCode || "",
+            payment_method: "cod",
+            delivery_method: "standard",
+            subtotal: pricing.subtotal,
+            discount: pricing.discount,
+            discount_amount: pricing.discount,
+            delivery_charge: pricing.deliveryCharge,
+            total: pricing.total,
+            coupon_code: discountCode || null,
+            status: "pending",
+            order_status: "pending",
+            payment_status: "cod_pending",
+            fulfillment_status: "unfulfilled",
+            notes: "Created from storefront checkout"
+          })
+          .select("*")
+          .single();
+      })
+      .then(function (orderResult) {
+        if (orderResult.error) throw orderResult.error;
+        orderRow = orderResult.data;
+        var orderItems = buildSupabaseOrderItems(orderRow.id, cart);
+        if (!orderItems.length) return null;
+        return client.from("order_items").insert(orderItems);
+      })
+      .then(function (itemsResult) {
+        if (itemsResult && itemsResult.error) throw itemsResult.error;
+
+        var inventoryPromise = inventoryPayload.length
+          ? client.rpc("complete_order_inventory", {
+              p_order_id: orderRow.id,
+              p_items: inventoryPayload,
+              p_session_id: getInventorySessionId(),
+              p_auth_user_id: authUserId || null
+            })
+          : Promise.resolve(null);
+
+        return inventoryPromise.catch(function (error) {
+          debugLog("Order inventory completion skipped:", error && error.message ? error.message : error);
+          return null;
+        });
+      })
+      .then(function () {
+        if (!selectedDiscount || !pricing.discount) {
+          return null;
+        }
+
+        return client.rpc("finalize_discount_redemption", {
+          coupon_code: discountCode || "",
+          cart_items: inventoryPayload,
+          order_subtotal: pricing.subtotal,
+          order_id: orderRow.id,
+          auth_user_id: authUserId || null,
+          customer_email: customer.email || identity.email || ""
+        }).catch(function (error) {
+          debugLog("Discount redemption finalization skipped:", error && error.message ? error.message : error);
+          return null;
+        });
+      })
+      .then(function () {
+        trackAnalyticsEvent("purchase", {
+          orderId: orderRow.id,
+          customer: customer,
+          metadata: {
+            order_number: orderNumber,
+            total: pricing.total,
+            subtotal: pricing.subtotal,
+            discount: pricing.discount
+          }
+        });
+
+        return {
+          id: orderRow.id,
+          _id: orderRow.id,
+          orderId: orderRow.order_number || orderNumber,
+          total: orderRow.total || pricing.total,
+          status: orderRow.order_status || orderRow.status || "pending",
+          customer: customer,
+          products: cart
+        };
+      });
+  }
+
   function setupCheckout() {
     var checkoutForm = document.querySelector("form.checkout.woocommerce-checkout");
     if (!checkoutForm) {
@@ -7452,37 +7593,43 @@
           var evaluation = evaluateCartDiscounts(cart, data.products, data.collections, data.discounts, readAppliedDiscountCode());
           var discountAmount = evaluation.selectedDiscount ? evaluation.selectedDiscount.discountAmount : 0;
           var subtotal = getCartTotal(cart);
-          return fetchDashcodeJson("/orders", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-              customer: customer,
-              products: cart.map(function (item) {
-                return {
-                  productId: item.productId,
-                  name: item.name,
-                  price: item.price,
-                  image: item.image,
-                  quantity: item.quantity
-                };
-              }),
-              pricing: {
-                subtotal: subtotal,
-                discount: discountAmount,
-                deliveryCharge: 0,
-                total: Math.max(0, subtotal - discountAmount)
-              },
-              paymentMethod: "cod",
-              deliveryMethod: "standard",
-              discount: evaluation.selectedDiscount ? {
-                code: evaluation.selectedDiscount.code,
-                title: evaluation.selectedDiscount.title,
-                discountAmount: discountAmount
-              } : null
-            })
-          });
+          var pricing = {
+            subtotal: subtotal,
+            discount: discountAmount,
+            deliveryCharge: 0,
+            total: Math.max(0, subtotal - discountAmount)
+          };
+
+          return createSupabaseOrder(customer, cart, pricing, evaluation.selectedDiscount)
+            .catch(function (supabaseError) {
+              debugLog("Supabase order creation failed; trying API fallback:", supabaseError.message);
+              return fetchDashcodeJson("/orders", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                  customer: customer,
+                  products: cart.map(function (item) {
+                    return {
+                      productId: item.productId,
+                      name: item.name,
+                      price: item.price,
+                      image: item.image,
+                      quantity: item.quantity
+                    };
+                  }),
+                  pricing: pricing,
+                  paymentMethod: "cod",
+                  deliveryMethod: "standard",
+                  discount: evaluation.selectedDiscount ? {
+                    code: evaluation.selectedDiscount.code,
+                    title: evaluation.selectedDiscount.title,
+                    discountAmount: discountAmount
+                  } : null
+                })
+              });
+            });
         })
         .then(function (order) {
           saveCart([]);

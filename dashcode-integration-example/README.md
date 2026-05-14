@@ -22,14 +22,13 @@ Recommended project/domain split:
 ## Expected env
 
 ```env
-NEXT_PUBLIC_API_BASE_URL=https://your-api-host.example.com/api
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 NEXT_PUBLIC_RADIOS_STOREFRONT_URL=https://your-storefront-domain.example.com
 NEXT_PUBLIC_STOREFRONT_PRODUCT_ROUTE=shop-single.html
 ```
 
-`NEXT_PUBLIC_API_BASE_URL` must point to the deployed Express/API service. The storefront URL is used by admin actions such as "view product on store".
+The storefront URL is used by admin actions such as "view product on store". Product, order, wishlist, review, inventory, search, promotion, and analytics operations use Supabase directly.
 
 ## What is included
 

@@ -399,10 +399,13 @@ export default function ProductsPage() {
   }
 
   async function handleDuplicate(product: Product) {
+    const copySuffix = Date.now();
     await api.createProduct({
       ...product,
-      sku: `${product.sku}-COPY-${Date.now()}`,
-      name: `${getProductName(product)} Copy`
+      sku: `${product.sku}-COPY-${copySuffix}`,
+      slug: product.slug ? `${product.slug}-copy-${copySuffix}` : undefined,
+      name: `${getProductName(product)} Copy`,
+      title: `${getProductName(product)} Copy`
     });
     await loadProducts();
   }

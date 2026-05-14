@@ -73,7 +73,50 @@
     });
   }
 
+  function isUuid(value) {
+    return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(String(value || ""));
+  }
+
+  async function updateOrderViaSupabase(orderId, payload) {
+    var client = getSupabaseClient();
+    if (!client || !isUuid(orderId)) {
+      throw new Error("Supabase order update is unavailable.");
+    }
+
+    var status = payload.status || "cancelled";
+    var updatePayload = {
+      status: status,
+      order_status: status,
+      tracking_status: labelize(status),
+      cancellation_reason: payload.cancellation_reason || null,
+      cancelled_at: status === "cancelled" ? new Date().toISOString() : undefined,
+      updated_at: new Date().toISOString()
+    };
+
+    Object.keys(updatePayload).forEach(function (key) {
+      if (updatePayload[key] === undefined) {
+        delete updatePayload[key];
+      }
+    });
+
+    var result = await client
+      .from("orders")
+      .update(updatePayload)
+      .eq("id", orderId)
+      .select("*")
+      .single();
+
+    if (result.error) throw result.error;
+    return result.data;
+  }
+
   async function updateOrderViaDashboardApi(orderId, payload) {
+    try {
+      return await updateOrderViaSupabase(orderId, payload);
+    } catch (supabaseError) {
+      console.warn("[Radios Orders] Supabase order update failed, trying API fallback:", supabaseError.message);
+    }
+
     var candidates = getDashboardApiCandidates();
     var lastError = null;
 
@@ -243,10 +286,6 @@
       month: "short",
       year: "numeric"
     });
-  }
-
-  function isUuid(value) {
-    return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(String(value || ""));
   }
 
   function getTrackingId(order) {
