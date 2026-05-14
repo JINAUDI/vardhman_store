@@ -1,0 +1,1694 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--========= Required meta tags =========-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Complete your Radios order with live cart totals, delivery options, coupons, and secure order creation.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Checkout - Radios</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="images/x-icon" />
+
+    <!-- css include -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/metisMenu.css?v=nav-clean-3">
+    <link rel="stylesheet" href="assets/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/main.css?v=header-gradient-1">
+</head>
+
+<body>
+
+    <div class="body_wrap">
+
+        <!-- preloder start  -->
+        <div class="preloder_part">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+        <!-- preloder end  -->
+
+        <!-- back to top start -->
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!-- back to top end -->
+
+        <!-- header start -->
+        <header class="header header__style-one">
+            <div class="mobile-header-enhanced" aria-label="Mobile storefront header">
+                <div class="mobile-header-enhanced__top">
+                    <button class="mobile-menu-toggle" type="button" aria-label="Open menu">
+                        <i class="fal fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <a href="index.html" class="mobile-header-enhanced__logo" aria-label="Radios home">
+                        <img src="assets/img/logo/logo.svg" alt="Radios">
+                    </a>
+                    <a href="cart.html" class="mobile-header-enhanced__cart" aria-label="Cart">
+                        <img src="assets/img/icon/shopping_bag.svg" alt="">
+                        <span class="count">0</span>
+                    </a>
+                </div>
+                <form class="mobile-header-enhanced__search header-mobile-search" role="search" method="get" action="shop-left-sidebar.html">
+                    <input type="text" name="search" placeholder="Search products" aria-label="Search products">
+                    <button type="submit" aria-label="Search"><i class="far fa-search" aria-hidden="true"></i></button>
+                </form>
+                <div class="mobile-header-enhanced__quick-links" aria-label="Quick links">
+                    <a href="track-order.html"><i class="far fa-truck" aria-hidden="true"></i><span>Track Order</span></a>
+                    <a href="my-orders.html"><i class="far fa-clipboard-list" aria-hidden="true"></i><span>My Orders</span></a>
+                    <a href="account.html" data-mobile-auth-link><i class="far fa-user" aria-hidden="true"></i><span data-mobile-auth-label>Login / Sign Up</span></a>
+                </div>
+            </div>
+            <div class="header__top-info-wrap d-none d-lg-block">
+                <div class="container">
+                    <div class="header__top-info ul_li_between mt-none-10">
+                        <ul class="ul_li mt-10">
+                            <li><i class="far fa-map-marker-alt"></i>Online Storefront</li>
+                            <li><a href="track-order.html"><i class="far fa-truck"></i>Track Your Order</a></li>
+                            <li><a href="tel:18006543210"><i class="fas fa-phone"></i>1-800-654-3210</a></li>
+                            <li><i class="fas fa-heart"></i>Welcome to Radios. We provide quality products at best
+                                prices.</li>
+                        </ul>
+                        <div class="header__top-right ul_li mt-10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__middle ul_li_between justify-content-xs-center">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="assets/img/logo/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <form class="header__search-box" action="shop-left-sidebar.html" method="get">
+                        <div class="select-box">
+                            <select id="category" name="category" style="display:none;">
+                                <option value="">All Categories</option>
+                                <option value="baby-products">Baby Products</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="health-supplements">Health Supplements</option>
+                                <option value="household-items">Household Items</option>
+                                <option value="hygiene-personal-care">Hygiene & Personal Care</option>
+                                <option value="mobile-accessories">Mobile Accessories</option>
+                            </select>
+                            <div class="custom-category-dropdown" id="customCategoryDropdown" tabindex="0"
+                                role="combobox" aria-expanded="false" aria-haspopup="listbox"
+                                aria-label="All Categories">
+                                <div class="custom-category-dropdown__selected">
+                                    <span class="custom-category-dropdown__text">All Categories</span>
+                                    <i class="far fa-chevron-down custom-category-dropdown__arrow"></i>
+                                </div>
+                                <ul class="custom-category-dropdown__menu" id="customCategoryMenu" role="listbox">
+                                    <li class="custom-category-dropdown__item" data-value="" role="option"
+                                        tabindex="-1">All Categories</li>
+                                    <li class="custom-category-dropdown__item" data-value="baby-products" role="option"
+                                        tabindex="-1">Baby Products</li>
+                                    <li class="custom-category-dropdown__item" data-value="electronics" role="option"
+                                        tabindex="-1">Electronics</li>
+                                    <li class="custom-category-dropdown__item" data-value="health-supplements" role="option"
+                                        tabindex="-1">Health Supplements</li>
+                                    <li class="custom-category-dropdown__item" data-value="household-items" role="option"
+                                        tabindex="-1">Household Items</li>
+                                    <li class="custom-category-dropdown__item" data-value="hygiene-personal-care" role="option"
+                                        tabindex="-1">Hygiene & Personal Care</li>
+                                    <li class="custom-category-dropdown__item" data-value="mobile-accessories" role="option"
+                                        tabindex="-1">Mobile Accessories</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="text" name="search" id="search" placeholder="Search For Products" required />
+                        <button type="submit"><i class="far fa-search"></i>
+                        </button>
+                    </form>
+                    <div class="header__lang ul_li">
+                        <div class="header__language mr-15">
+                            <span class="lang-btn" style="cursor:default;"><svg width="18" height="12"
+                                    viewBox="0 0 18 12"
+                                    style="vertical-align:middle;margin-right:5px;border-radius:1px;">
+                                    <rect width="18" height="4" fill="#FF9933" />
+                                    <rect y="4" width="18" height="4" fill="#fff" />
+                                    <rect y="8" width="18" height="4" fill="#138808" />
+                                    <circle cx="9" cy="6" r="1.5" fill="#000080" />
+                                </svg> INR</span>
+                        </div>
+                        <div class="header__language">
+                            <span class="lang-btn" style="cursor:default;">EN</span>
+                        </div>
+                    </div>
+                    <div class="header__icons ul_li">
+                        <div class="icon">
+                            <a href="account.html?redirect=checkout.html"><img src="assets/img/icon/user.svg" alt="Account"></a>
+                        </div>
+                        <div class="icon wishlist-icon">
+                            <a href="wishlist.html">
+                                <img src="assets/img/icon/heart.svg" alt="">
+                                <span class="count">0</span>
+                            </a>
+                        </div>
+                        <a href="cart.html" class="icon shopping-bag header-cart-link" aria-label="View cart">
+                            <img src="assets/img/icon/shopping_bag.svg" alt="">
+                            <span class="count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__cat-wrap" data-uk-sticky="top: 250; animation: uk-animation-slide-top;">
+                <div class="container">
+                    <div class="header__wrap ul_li_between">
+                        <div class="header__cat ul_li">
+                            <div class="hamburger_menu">
+                                <a href="javascript:void(0);" class="active">
+                                    <div class="icon bar">
+                                        <span><i class="fal fa-bars"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <ul class="category ul_li">
+                                <li>
+                                    <a href="category.html?slug=electronics"><span><i
+                                                class="fas fa-laptop"></i></span>Electronics</a>
+                                </li>
+                                <li>
+                                    <a href="category.html?slug=mobile-accessories"><span><i
+                                                class="fas fa-headphones"></i></span>Mobile Accessories</a>
+                                </li>
+                                <li>
+                                    <a href="category.html?slug=health-supplements"><span><i
+                                                class="fas fa-capsules"></i></span>Health Supplements</a>
+                                </li>
+                                <li>
+                                    <a href="category.html?slug=hygiene-personal-care"><span><i
+                                                class="fas fa-heart"></i></span>Hygiene &amp; Personal Care</a>
+                                </li>
+                                <li>
+                                    <a href="category.html?slug=baby-products"><span><i class="fas fa-baby"></i></span>Baby
+                                        Products</a>
+                                </li>
+                                <li>
+                                    <a href="category.html?slug=household-items"><span><i
+                                                class="fas fa-home"></i></span>Household Items</a>
+                                </li>
+                            </ul>
+
+                            <div class="login-sign-btn">
+                                <a class="thm-btn" href="account.html">
+                                    <span class="btn-wrap">
+                                        <span>Login / Sign Up</span>
+                                        <span>Login / Sign Up</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <!-- header end -->
+
+        <!-- slide-bar start -->
+        <aside class="slide-bar">
+            <div class="close-mobile-menu">
+                <a href="javascript:void(0);"><i class="fal fa-times"></i></a>
+            </div>
+            <!-- sidebar-info start -->
+            <div class="cart_sidebar">
+                <button type="button" class="cart_close_btn"><i class="fal fa-times"></i></button>
+                <h2 class="heading_title text-uppercase">Cart Items - <span>0</span></h2>
+                <div class="cart_items_list">
+                    <div class="cart_item">
+                        <div class="item_content">
+                            <h4 class="item_title">
+                                Your cart is empty
+                            </h4>
+                            <span class="item_price">Add products from the catalog.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="total_price text-uppercase">
+                    <span>Sub Total:</span>
+                    <span>INR 0</span>
+                </div>
+                <ul class="btns_group ul_li">
+                    <li><a href="cart.html" class="thm-btn">
+                            <span class="btn-wrap">
+                                <span>View Cart</span>
+                                <span>View Cart</span>
+                            </span>
+                        </a></li>
+                    <li><a href="checkout.html" class="thm-btn thm-btn__black">
+                            <span class="btn-wrap">
+                                <span>Checkout</span>
+                                <span>Checkout</span>
+                            </span>
+                        </a></li>
+                </ul>
+            </div>
+            <!-- sidebar-info end -->
+
+            <!-- side-mobile-menu start -->
+            <nav class="side-mobile-menu">
+                <div class="header-mobile-search">
+                    <form role="search" method="get" action="shop-left-sidebar.html">
+                        <input type="text" name="search" placeholder="Search Keywords">
+                        <button type="submit"><i class="ti-search"></i></button>
+                    </form>
+                </div>
+                <ul id="mobile-menu-active" class="radios-mobile-nav radios-mobile-nav__main">
+                    <li class="radios-mobile-nav__section" aria-hidden="true">Main Menu</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop-left-sidebar.html">Shop</a></li>
+                    <li><a href="my-orders.html">My Orders</a></li>
+                    <li><a href="track-order.html">Track Order</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="wishlist.html">Wishlist <span data-wishlist-count>0</span></a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="radios-mobile-nav__divider" aria-hidden="true"></li>
+                    <li class="radios-mobile-nav__category-group">
+                        <button class="radios-mobile-nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-category-menu">
+                            <span>Shop by Category</span>
+                            <i class="far fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <ul id="mobile-category-menu" class="radios-mobile-nav__categories" hidden>
+                            <li><a href="category.html?slug=electronics">Electronics</a></li>
+                            <li><a href="category.html?slug=mobile-accessories">Mobile Accessories</a></li>
+                            <li><a href="category.html?slug=health-supplements">Health Supplements</a></li>
+                            <li><a href="category.html?slug=hygiene-personal-care">Hygiene &amp; Personal Care</a></li>
+                            <li><a href="category.html?slug=baby-products">Baby Products</a></li>
+                            <li><a href="category.html?slug=household-items">Household Items</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- side-mobile-menu end -->
+        </aside>
+        <div class="body-overlay"></div>
+        <!-- slide-bar end -->
+
+        <main>
+
+            <!-- breadcrumb start -->
+            <section class="breadcrumb-area">
+                <div class="container">
+                    <div class="radios-breadcrumb breadcrumbs">
+                        <ul class="list-unstyled d-flex align-items-center">
+                            <li class="radiosbcrumb-item radiosbcrumb-begin">
+                                <a href="index.html"><span>Home</span></a>
+                            </li>
+                            <li class="radiosbcrumb-item radiosbcrumb-end">
+                                <span>Checkout</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb end -->
+
+            <!-- start checkout-section -->
+            <section class="radios-checkout-page pb-80">
+                <div class="container">
+                    <nav class="radios-checkout-page__progress" aria-label="Checkout progress">
+                        <a class="radios-checkout-page__progress-link" href="cart.html">Cart</a>
+                        <i class="far fa-chevron-right" aria-hidden="true"></i>
+                        <a class="radios-checkout-page__progress-link is-active" href="#checkout-delivery" aria-current="step">Delivery</a>
+                        <i class="far fa-chevron-right" aria-hidden="true"></i>
+                        <a class="radios-checkout-page__progress-link" href="#checkout-payment">Payment</a>
+                        <i class="far fa-chevron-right" aria-hidden="true"></i>
+                        <a class="radios-checkout-page__progress-link" href="#checkout-confirm">Confirm</a>
+                    </nav>
+
+                    <div class="radios-checkout-page__notice">
+                        <i class="far fa-lock-alt"></i>
+                        <span>Secure checkout. Your delivery details stay protected.</span>
+                    </div>
+
+                    <form class="radios-checkout-page__grid" action="checkout.html" novalidate>
+                        <div class="radios-checkout-page__main">
+                            <section class="radios-checkout-page__card" id="checkout-delivery">
+                                <div class="radios-checkout-page__section-title">
+                                    <span>1</span>
+                                    <div>
+                                        <h2>Delivery Address</h2>
+                                        <p>Enter the address where you want your order delivered.</p>
+                                    </div>
+                                </div>
+
+                                <div class="radios-checkout-page__fields">
+                                    <div class="radios-checkout-page__field">
+                                        <label for="checkout_full_name">Full Name</label>
+                                        <input id="checkout_full_name" name="fullName" type="text" autocomplete="name" data-required>
+                                        <span class="radios-checkout-page__error">Full name is required.</span>
+                                    </div>
+                                    <div class="radios-checkout-page__field">
+                                        <label for="checkout_phone">Phone Number</label>
+                                        <input id="checkout_phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" data-required data-phone>
+                                        <span class="radios-checkout-page__error">Enter a valid 10 digit phone number.</span>
+                                    </div>
+                                    <div class="radios-checkout-page__field radios-checkout-page__field--wide">
+                                        <label for="checkout_email">Email</label>
+                                        <input id="checkout_email" name="email" type="email" autocomplete="email" data-required data-email>
+                                        <span class="radios-checkout-page__error">Enter a valid email address.</span>
+                                    </div>
+                                    <div class="radios-checkout-page__field radios-checkout-page__field--wide">
+                                        <label for="checkout_house">House / Flat / Building</label>
+                                        <input id="checkout_house" name="house" type="text" autocomplete="address-line1" data-required>
+                                        <span class="radios-checkout-page__error">House or building details are required.</span>
+                                    </div>
+                                    <div class="radios-checkout-page__field radios-checkout-page__field--wide">
+                                        <label for="checkout_street">Street / Area</label>
+                                        <input id="checkout_street" name="street" type="text" autocomplete="address-line2" data-required>
+                                        <span class="radios-checkout-page__error">Street or area is required.</span>
+                                    </div>
+                                    <div class="radios-checkout-page__field">
+                                        <label for="checkout_city">City</label>
+                                        <input id="checkout_city" name="city" type="text" autocomplete="address-level2" data-required>
+                                        <span class="radios-checkout-page__error">City is required.</span>
+                                    </div>
+                                    <div class="radios-checkout-page__field">
+                                        <label for="checkout_state">State</label>
+                                        <input id="checkout_state" name="state" type="text" autocomplete="address-level1" data-required>
+                                        <span class="radios-checkout-page__error">State is required.</span>
+                                    </div>
+                                    <div class="radios-checkout-page__field">
+                                        <label for="checkout_pin">PIN Code</label>
+                                        <input id="checkout_pin" name="pinCode" type="text" inputmode="numeric" autocomplete="postal-code" data-required data-pin>
+                                        <span class="radios-checkout-page__error">Enter a valid 6 digit PIN code.</span>
+                                    </div>
+                                    <label class="radios-checkout-page__checkbox">
+                                        <input type="checkbox" name="saveAddress">
+                                        <span>Save this address for next time</span>
+                                    </label>
+                                </div>
+                            </section>
+
+                            <section class="radios-checkout-page__card" id="checkout-payment">
+                                <div class="radios-checkout-page__section-title">
+                                    <span>2</span>
+                                    <div>
+                                        <h2>Delivery Method</h2>
+                                        <p>Choose how quickly you want your order.</p>
+                                    </div>
+                                </div>
+                                <div class="radios-checkout-page__options" data-delivery-options>
+                                    <label class="radios-checkout-page__option is-selected">
+                                        <input type="radio" name="deliveryMethod" value="standard" data-charge="0" checked>
+                                        <span>
+                                            <strong>Standard Delivery</strong>
+                                            <small data-estimate="standard">Delivered in 4-6 days</small>
+                                        </span>
+                                        <b>Free</b>
+                                    </label>
+                                    <label class="radios-checkout-page__option">
+                                        <input type="radio" name="deliveryMethod" value="express" data-charge="99">
+                                        <span>
+                                            <strong>Express Delivery</strong>
+                                            <small data-estimate="express">Delivered in 2-3 days</small>
+                                        </span>
+                                        <b>&#8377;99</b>
+                                    </label>
+                                </div>
+                            </section>
+
+                            <section class="radios-checkout-page__card">
+                                <div class="radios-checkout-page__section-title">
+                                    <span>3</span>
+                                    <div>
+                                        <h2>Payment Method</h2>
+                                        <p>Select a payment option for this order.</p>
+                                    </div>
+                                </div>
+                                <div class="radios-checkout-page__options" data-payment-options>
+                                    <label class="radios-checkout-page__option is-selected">
+                                        <input type="radio" name="paymentMethod" value="cash_on_delivery" checked>
+                                        <span>
+                                            <strong>Cash on Delivery</strong>
+                                            <small>Pay when your order arrives</small>
+                                        </span>
+                                        <i class="far fa-money-bill-wave"></i>
+                                    </label>
+                                </div>
+                            </section>
+
+                            <section class="radios-checkout-page__card">
+                                <div class="radios-checkout-page__section-title">
+                                    <span>4</span>
+                                    <div>
+                                        <h2>Additional Notes</h2>
+                                        <p>Add delivery instructions for the store team.</p>
+                                    </div>
+                                </div>
+                                <div class="radios-checkout-page__field radios-checkout-page__field--wide">
+                                    <label for="checkout_notes">Order Notes</label>
+                                    <textarea id="checkout_notes" name="notes" rows="4" placeholder="Landmark, preferred time, or delivery instructions"></textarea>
+                                </div>
+                            </section>
+                        </div>
+
+                        <aside class="radios-checkout-page__summary">
+                            <section class="radios-checkout-page__card radios-checkout-page__card--summary" id="checkout-confirm">
+                                <div class="radios-checkout-page__summary-head">
+                                    <h2>Order Summary</h2>
+                                    <a href="cart.html">Edit cart</a>
+                                </div>
+
+                                <div class="radios-checkout-page__empty" data-checkout-empty>
+                                    <h3>Your cart is empty</h3>
+                                    <p>Add products to your cart before placing an order.</p>
+                                    <a class="radios-checkout-page__shop-link" href="shop-left-sidebar.html">Browse Products</a>
+                                </div>
+
+                                <div class="radios-checkout-page__summary-content" data-checkout-summary>
+                                    <div class="radios-checkout-page__items" data-checkout-items></div>
+
+                                    <div class="radios-checkout-page__coupon">
+                                        <label for="checkout_coupon_code">Coupon</label>
+                                        <div>
+                                            <input id="checkout_coupon_code" type="text" placeholder="Enter coupon code">
+                                            <button type="button" data-apply-checkout-coupon>Apply</button>
+                                        </div>
+                                        <p data-coupon-message></p>
+                                    </div>
+
+                                    <div class="radios-checkout-page__totals">
+                                        <div><span>Subtotal</span><strong data-checkout-subtotal>&#8377;0</strong></div>
+                                        <div><span>Discount</span><strong data-checkout-discount>-&#8377;0</strong></div>
+                                        <div><span>Delivery charge</span><strong data-checkout-delivery>&#8377;0</strong></div>
+                                        <div class="radios-checkout-page__total"><span>Final total</span><strong data-checkout-total>&#8377;0</strong></div>
+                                    </div>
+
+                                    <div class="radios-checkout-page__message" data-checkout-message aria-live="polite"></div>
+                                    <button class="radios-checkout-page__place-order" type="submit">Place Order</button>
+                                </div>
+                            </section>
+                        </aside>
+                    </form>
+
+                    <button class="radios-checkout-page__mobile-place" type="button" data-mobile-place-order>Place Order</button>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- footer start -->
+<footer class="footer radios-footer">
+    <div class="radios-footer__top">
+        <div class="container">
+            <div class="radios-footer__newsletter">
+                <div>
+                    <span class="radios-footer__eyebrow">Radios Care</span>
+                    <h2>Electronics, essentials, and order help in one place</h2>
+                    <p>Get product updates, order support, and useful store news from Radios.</p>
+                </div>
+                <form class="radios-footer__form" action="contact.html" method="get">
+                    <input name="email" placeholder="Enter your email" type="email" aria-label="Email address">
+                    <button type="submit">Get Updates</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="radios-footer__main">
+            <div class="footer__widget radios-footer__brand">
+                <a class="radios-footer__logo" href="index.html"><img src="assets/img/logo/logo.svg" alt="Radios"></a>
+                <p>Radios brings together electronics, mobile accessories, daily essentials, and personal care products with INR pricing and reliable checkout.</p>
+                <ul class="radios-footer__info">
+                    <li><i class="far fa-envelope"></i><span>Support: <a href="mailto:radios.support@gmail.com">radios.support@gmail.com</a></span></li>
+                    <li><i class="fas fa-phone"></i><span>Help line: <a href="tel:18006543210">1-800-654-3210</a></span></li>
+                    <li><i class="fas fa-truck"></i><span>Orders: <a href="track-order.html">Track order status</a></span></li>
+                </ul>
+            </div>
+            <nav class="footer__widget" aria-label="Shop categories">
+                <h2 class="title">Shop</h2>
+                <ul class="quick-links">
+                    <li><a href="shop-left-sidebar.html">All Products</a></li>
+                    <li><a href="category.html?slug=electronics">Electronics</a></li>
+                    <li><a href="category.html?slug=mobile-accessories">Mobile Accessories</a></li>
+                    <li><a href="category.html?slug=health-supplements">Health Supplements</a></li>
+                    <li><a href="category.html?slug=hygiene-personal-care">Hygiene & Personal Care</a></li>
+                    <li><a href="category.html?slug=baby-products">Baby Products</a></li>
+                    <li><a href="category.html?slug=household-items">Household Items</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__widget" aria-label="Customer account">
+                <h2 class="title">Account</h2>
+                <ul class="quick-links">
+                    <li><a href="account.html">Login / Sign Up</a></li>
+                    <li><a href="account-dashboard.html">Account Dashboard</a></li>
+                    <li><a href="my-orders.html">My Orders</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__widget" aria-label="Store help">
+                <h2 class="title">Help</h2>
+                <ul class="quick-links">
+                    <li><a href="contact.html">Contact Support</a></li>
+                    <li><a href="track-order.html">Track Order</a></li>
+                    <li><a href="returns.html">Returns</a></li>
+                    <li><a href="addresses.html">Saved Addresses</a></li>
+                    <li><a href="customer-notifications.html">Notifications</a></li>
+                    <li><a href="about.html">About Radios</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="radios-footer__trust">
+            <div><strong>Secure checkout</strong><span>Cart, discounts, and orders stay connected to your account.</span></div>
+            <div><strong>Live inventory</strong><span>Products reflect stock and visibility from the dashboard.</span></div>
+            <div><strong>Customer support</strong><span>Track orders, manage returns, and get help from one place.</span></div>
+        </div>
+        <div class="radios-footer__bottom">
+            <div class="radios-footer__copyright">&copy; 2026 Radios. All Rights Reserved. INR pricing for storefront orders.</div>
+            <div class="radios-footer__social" aria-label="Social links">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="payment_method"><img src="assets/img/bg/payment_method.png" alt="Accepted payment methods"></div>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+        <!-- start newsletter-popup-area-section -->
+        <section class="newsletter-popup-area-section">
+            <div class="newsletter-popup-area">
+                <div class="newsletter-popup-ineer">
+                    <button class="btn newsletter-close-btn"><i class="fal fa-times"></i></button>
+                    <div class="img-holder">
+                        <img src="assets/img/bg/newsletter.jpg" alt>
+                    </div>
+                    <div class="details">
+                        <h4>Get Radios updates in your inbox</h4>
+                        <p>Product updates, order support notes, and useful store news from Radios.</p>
+                        <form action="contact.html" method="get">
+                            <div>
+                                <input type="email" name="email" placeholder="Enter your email" />
+                                <button type="submit">Get Updates</button>
+                            </div>
+                            <div>
+                                <label class="checkbox-holder"> Don't show this popup again.
+                                    <input type="checkbox" class="show-message">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end newsletter-popup-area-section -->
+        <!-- start cookies-area -->
+        <div class="cookies-area">
+            <p>This website uses cookies to improve your shopping experience. For privacy questions, contact Radios support.</p>
+            <a href="contact.html" class="read-more">Contact Support</a>
+            <div>
+                <button class="cookie-btn">Accept</button>
+            </div>
+        </div>
+        <!-- end cookies-area -->
+
+
+    </div>
+
+    <!-- jquery include -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/backToTop.js?v=2"></script>
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/resize-sensor.min.js"></script>
+    <script src="assets/js/theia-sticky-sidebar.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jqueryui.js"></script>
+    <script src="assets/js/touchspin.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/custom-dropdown.js"></script>
+    <script src="assets/js/main.js?v=mobile-header-2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/supabase-config.js"></script>
+    <script src="assets/js/radios-auth.js?v=auth-complete-1"></script>
+    <script src="assets/js/storefront-api.js?v=abandoned-cart-1"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var checkoutPage = document.querySelector('.radios-checkout-page');
+            if (!checkoutPage) return;
+
+            var CART_KEY = 'radios-cart';
+            var CUSTOMER_KEY = 'radios-customer';
+            var LAST_ORDER_KEY = 'radios-last-checkout-order';
+            var SUPABASE_URL_KEY = 'radios-supabase-url';
+            var SUPABASE_ANON_KEY = 'radios-supabase-anon-key';
+            var SUPABASE_CONFIG_ERROR = 'Supabase is not configured. Please add your project URL and anon key in assets/js/supabase-config.js';
+            var discountFlow = window.RadiosDiscounts || {};
+            var state = {
+                cart: readCart(),
+                couponCode: discountFlow.readCode ? discountFlow.readCode() : '',
+                discountAmount: 0,
+                itemDiscountAmount: 0,
+                shippingDiscountAmount: 0,
+                effectiveDeliveryCharge: 0,
+                discountEvaluation: null,
+                deliveryCharge: 0,
+                deliveryMethod: 'standard',
+                paymentMethod: 'cash_on_delivery',
+                isSubmitting: false
+            };
+
+            var form = checkoutPage.querySelector('.radios-checkout-page__grid');
+            var itemsWrap = checkoutPage.querySelector('[data-checkout-items]');
+            var couponInput = checkoutPage.querySelector('#checkout_coupon_code');
+            var couponMessage = checkoutPage.querySelector('[data-coupon-message]');
+            var checkoutMessage = checkoutPage.querySelector('[data-checkout-message]');
+            var mobilePlaceButton = checkoutPage.querySelector('[data-mobile-place-order]');
+            var checkoutNotice = checkoutPage.querySelector('.radios-checkout-page__notice span');
+
+            function readCart() {
+                try {
+                    var items = JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+                    return Array.isArray(items) ? items : [];
+                } catch (error) {
+                    return [];
+                }
+            }
+
+            function saveCart() {
+                localStorage.setItem(CART_KEY, JSON.stringify(state.cart));
+                trackCheckoutAbandonedCart();
+            }
+
+            function formatCurrency(value) {
+                return new Intl.NumberFormat('en-IN', {
+                    style: 'currency',
+                    currency: 'INR',
+                    maximumFractionDigits: 0
+                }).format(Number(value) || 0);
+            }
+
+            function addDays(days) {
+                var date = new Date();
+                date.setDate(date.getDate() + days);
+                return date.toLocaleDateString('en-IN', { day: 'numeric', month: 'short' });
+            }
+
+            function updateDeliveryDates() {
+                var standard = checkoutPage.querySelector('[data-estimate="standard"]');
+                var express = checkoutPage.querySelector('[data-estimate="express"]');
+                if (standard) standard.textContent = 'Estimated by ' + addDays(5);
+                if (express) express.textContent = 'Estimated by ' + addDays(2);
+            }
+
+            function getSubtotal() {
+                return state.cart.reduce(function (sum, item) {
+                    return sum + (Number(item.price) || 0) * (Number(item.quantity) || 0);
+                }, 0);
+            }
+
+            function setMessage(element, text, type) {
+                if (!element) return;
+                element.textContent = text || '';
+                element.className = element.className.replace(/\s?is-(error|success)/g, '');
+                if (text && type) {
+                    element.className += ' is-' + type;
+                }
+            }
+
+            function getPlaceOrderButtons() {
+                return Array.prototype.slice.call(checkoutPage.querySelectorAll('.radios-checkout-page__place-order, .radios-checkout-page__mobile-place'));
+            }
+
+            function setSubmitting(isSubmitting) {
+                state.isSubmitting = isSubmitting;
+                getPlaceOrderButtons().forEach(function (button) {
+                    button.disabled = isSubmitting;
+                    button.textContent = isSubmitting ? 'Placing order...' : 'Place Order';
+                });
+            }
+
+            function setFieldValue(name, value) {
+                var input = form.querySelector('[name="' + name + '"]');
+                if (input && value && !input.value) {
+                    input.value = value;
+                }
+            }
+
+            function getCustomerFullName(customer) {
+                if (!customer) return '';
+                return (window.RadiosAuth && window.RadiosAuth.getFullName ? window.RadiosAuth.getFullName(customer) : '') ||
+                    customer.fullName ||
+                    [customer.firstName, customer.lastName].filter(Boolean).join(' ');
+            }
+
+            function hydrateCustomerDetails(customer) {
+                if (!customer) {
+                    if (checkoutNotice) {
+                        checkoutNotice.innerHTML = 'Secure checkout. <a href="account.html?redirect=checkout.html">Sign in</a> to prefill your details and keep orders in one place.';
+                    }
+                    return;
+                }
+
+                setFieldValue('fullName', getCustomerFullName(customer));
+                setFieldValue('phone', customer.phone);
+                setFieldValue('email', customer.email);
+                setFieldValue('house', customer.addressLine1 || customer.house);
+                setFieldValue('street', customer.addressLine2 || customer.street);
+                setFieldValue('city', customer.city);
+                setFieldValue('state', customer.state);
+                setFieldValue('pinCode', customer.zipCode || customer.pinCode);
+
+                var saveAddress = form.querySelector('[name="saveAddress"]');
+                if (saveAddress && (customer.addressLine1 || customer.city || customer.zipCode)) {
+                    saveAddress.checked = true;
+                }
+
+                if (checkoutNotice && customer.signedIn) {
+                    checkoutNotice.textContent = 'Signed in as ' + (customer.email || getCustomerFullName(customer)) + '. Checkout details are ready.';
+                }
+            }
+
+            function hydrateDefaultAddress(customer) {
+                var client = window.RadiosAuth && window.RadiosAuth.getSupabaseClient ? window.RadiosAuth.getSupabaseClient() : null;
+                var authUserId = customer && customer.signedIn ? (customer.authUserId || customer.auth_user_id || customer.id) : '';
+
+                if (!client || !authUserId) {
+                    return Promise.resolve(null);
+                }
+
+                return client
+                    .from('customer_addresses')
+                    .select('full_name,phone,address_line1,address_line2,city,state,pincode,country,address_type,is_default')
+                    .eq('auth_user_id', authUserId)
+                    .eq('is_default', true)
+                    .maybeSingle()
+                    .then(function (result) {
+                        if (result.error) throw result.error;
+                        var address = result.data;
+                        if (!address) return null;
+
+                        setFieldValue('fullName', address.full_name || getCustomerFullName(customer));
+                        setFieldValue('phone', address.phone || customer.phone);
+                        setFieldValue('house', address.address_line1);
+                        setFieldValue('street', address.address_line2);
+                        setFieldValue('city', address.city);
+                        setFieldValue('state', address.state);
+                        setFieldValue('pinCode', address.pincode);
+
+                        var saveAddress = form.querySelector('[name="saveAddress"]');
+                        if (saveAddress) {
+                            saveAddress.checked = true;
+                        }
+
+                        return address;
+                    })
+                    .catch(function (error) {
+                        console.warn('Default address lookup failed.', error);
+                        return null;
+                    });
+            }
+
+            function persistCheckoutCustomer(formData) {
+                var existing = window.RadiosAuth && window.RadiosAuth.readCustomer ? window.RadiosAuth.readCustomer() : {};
+                var customer = Object.assign({}, existing || {}, {
+                    firstName: formData.fullName.split(' ')[0] || formData.fullName,
+                    lastName: formData.fullName.split(' ').slice(1).join(' '),
+                    fullName: formData.fullName,
+                    email: formData.email,
+                    phone: formData.phone,
+                    addressLine1: formData.house,
+                    addressLine2: formData.street,
+                    city: formData.city,
+                    state: formData.state,
+                    country: 'India',
+                    zipCode: formData.pinCode,
+                    signedIn: Boolean(existing && existing.signedIn)
+                });
+
+                if (window.RadiosAuth && window.RadiosAuth.persistCustomer) {
+                    window.RadiosAuth.persistCustomer(customer);
+                } else {
+                    localStorage.setItem(CUSTOMER_KEY, JSON.stringify(customer));
+                    localStorage.setItem('radios-customer-email', formData.email);
+                }
+            }
+
+            function saveCheckoutAddress(formData, customer) {
+                var client = window.RadiosAuth && window.RadiosAuth.getSupabaseClient ? window.RadiosAuth.getSupabaseClient() : null;
+                var authUserId = customer && customer.signedIn ? (customer.authUserId || customer.auth_user_id || customer.id) : '';
+                var customerId = customer && customer.customerId ? customer.customerId : null;
+
+                if (!client || !authUserId || !formData.saveAddress) {
+                    return Promise.resolve(null);
+                }
+
+                return client
+                    .from('customer_addresses')
+                    .insert({
+                        auth_user_id: authUserId,
+                        customer_id: customerId || null,
+                        full_name: formData.fullName,
+                        phone: formData.phone,
+                        address_line1: formData.house,
+                        address_line2: formData.street,
+                        city: formData.city,
+                        state: formData.state,
+                        pincode: formData.pinCode,
+                        country: 'India',
+                        address_type: 'home',
+                        is_default: true
+                    })
+                    .then(function (result) {
+                        if (result.error) throw result.error;
+                        return result.data || null;
+                    })
+                    .catch(function (error) {
+                        console.warn('Checkout address save failed.', error);
+                        return null;
+                    });
+            }
+
+            function getSupabaseConfig() {
+                var windowUrl = String(window.RADIOS_SUPABASE_URL || '').trim();
+                var windowAnonKey = String(window.RADIOS_SUPABASE_ANON_KEY || '').trim();
+                var url = windowUrl && windowUrl.indexOf('YOUR_') === -1 ? windowUrl : String(localStorage.getItem(SUPABASE_URL_KEY) || '').trim();
+                var anonKey = windowAnonKey && windowAnonKey.indexOf('YOUR_') === -1 ? windowAnonKey : String(localStorage.getItem(SUPABASE_ANON_KEY) || '').trim();
+
+                url = url.replace(/\/$/, '');
+                var isPlaceholder = !url || !anonKey || url.indexOf('YOUR_') !== -1 || anonKey.indexOf('YOUR_') !== -1;
+
+                return {
+                    url: url,
+                    anonKey: anonKey,
+                    isConfigured: !isPlaceholder
+                };
+            }
+
+            function getRadiosSupabaseClient(config) {
+                if (!config.isConfigured) {
+                    throw new Error(SUPABASE_CONFIG_ERROR);
+                }
+
+                if (window.radiosSupabase) {
+                    return window.radiosSupabase;
+                }
+
+                if (window.supabase && typeof window.supabase.createClient === 'function') {
+                    window.radiosSupabase = window.supabase.createClient(config.url, config.anonKey);
+                    return window.radiosSupabase;
+                }
+
+                return null;
+            }
+
+            function generateOrderNumber() {
+                var now = new Date();
+                var datePart = [
+                    now.getFullYear(),
+                    String(now.getMonth() + 1).padStart(2, '0'),
+                    String(now.getDate()).padStart(2, '0')
+                ].join('');
+                var randomPart = Math.random().toString(36).slice(2, 8).toUpperCase();
+
+                return 'RAD-' + datePart + '-' + randomPart;
+            }
+
+            function generateTrackingId() {
+                var date = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+                var random = Math.random().toString(36).substring(2, 6).toUpperCase();
+
+                return 'RAD-' + date + '-' + random;
+            }
+
+            function generateInvoiceNumber() {
+                var date = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+                var random = Math.random().toString(36).substring(2, 8).toUpperCase();
+
+                return 'INV-' + date + '-' + random;
+            }
+
+            function getEstimatedDeliveryDate(method) {
+                var days = method === 'express' ? 2 : 5;
+                var date = new Date();
+                date.setDate(date.getDate() + days);
+
+                return date.toISOString().slice(0, 10);
+            }
+
+            function isMissingTrackingColumnError(error) {
+                var message = String(error && error.message ? error.message : error || '').toLowerCase();
+                return message.indexOf('tracking_id') !== -1 ||
+                    message.indexOf('tracking_status') !== -1 ||
+                    message.indexOf('estimated_delivery_date') !== -1 ||
+                    message.indexOf('tracking_updated_at') !== -1 ||
+                    message.indexOf('schema cache') !== -1;
+            }
+
+            function isMissingCustomerColumnError(error) {
+                var message = String(error && error.message ? error.message : error || '').toLowerCase();
+                return message.indexOf('auth_user_id') !== -1 ||
+                    message.indexOf('customer_id') !== -1 ||
+                    message.indexOf('schema cache') !== -1;
+            }
+
+            function isMissingLifecycleColumnError(error) {
+                var message = String(error && error.message ? error.message : error || '').toLowerCase();
+                return message.indexOf('order_status') !== -1 ||
+                    message.indexOf('fulfillment_status') !== -1 ||
+                    message.indexOf('refund_status') !== -1 ||
+                    message.indexOf('invoice_number') !== -1 ||
+                    message.indexOf('courier_name') !== -1 ||
+                    message.indexOf('courier_tracking_number') !== -1 ||
+                    message.indexOf('schema cache') !== -1;
+            }
+
+            function isMissingPromotionColumnError(error) {
+                var message = String(error && error.message ? error.message : error || '').toLowerCase();
+                return message.indexOf('coupon_code') !== -1 ||
+                    message.indexOf('discount_id') !== -1 ||
+                    message.indexOf('discount_amount') !== -1 ||
+                    message.indexOf('promotion_title') !== -1 ||
+                    message.indexOf('schema cache') !== -1;
+            }
+
+            function isUuid(value) {
+                return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(String(value || ''));
+            }
+
+            function supabaseRequest(path, options) {
+                var config = getSupabaseConfig();
+                var client = getRadiosSupabaseClient(config);
+
+                if (client) {
+                    var query = client.from(path);
+                    if ((options.method || 'GET').toUpperCase() === 'POST') {
+                        query = query.insert(options.body);
+                    } else {
+                        query = query.select();
+                    }
+
+                    if (options.prefer !== 'return=minimal') {
+                        query = query.select();
+                    }
+
+                    return query.then(function (result) {
+                        if (result.error) {
+                            throw result.error;
+                        }
+                        return result.data;
+                    });
+                }
+
+                return fetch(config.url + '/rest/v1/' + path, {
+                    method: options.method || 'GET',
+                    headers: {
+                        apikey: config.anonKey,
+                        Authorization: 'Bearer ' + config.anonKey,
+                        'Content-Type': 'application/json',
+                        Prefer: options.prefer || 'return=representation'
+                    },
+                    body: options.body ? JSON.stringify(options.body) : undefined
+                }).then(function (response) {
+                    return response.text().then(function (text) {
+                        var data = text ? JSON.parse(text) : null;
+
+                        if (!response.ok) {
+                            var message = data && (data.message || data.details || data.hint) ? (data.message || data.details || data.hint) : 'Supabase request failed';
+                            throw new Error(message);
+                        }
+
+                        return data;
+                    });
+                });
+            }
+
+
+            function getTrackingCustomer(formData) {
+                var signedInCustomer = window.RadiosAuth && window.RadiosAuth.readCustomer ? window.RadiosAuth.readCustomer() : null;
+                formData = formData || {};
+                return {
+                    fullName: formData.fullName || (signedInCustomer && (signedInCustomer.fullName || signedInCustomer.name)) || '',
+                    email: formData.email || (signedInCustomer && signedInCustomer.email) || '',
+                    phone: formData.phone || (signedInCustomer && signedInCustomer.phone) || '',
+                    authUserId: signedInCustomer && signedInCustomer.signedIn ? signedInCustomer.authUserId : '',
+                    customerId: signedInCustomer && signedInCustomer.signedIn ? signedInCustomer.customerId : ''
+                };
+            }
+
+            function trackCheckoutAbandonedCart(extra) {
+                if (!window.RadiosAbandonedCart || typeof window.RadiosAbandonedCart.trackCheckout !== 'function') {
+                    return Promise.resolve(null);
+                }
+                var formData = {};
+                try {
+                    formData = readFormData();
+                } catch (error) {
+                    formData = {};
+                }
+                return window.RadiosAbandonedCart.trackCheckout(state.cart, Object.assign({
+                    customer: getTrackingCustomer(formData),
+                    discount: state.discountAmount,
+                    total: Math.max(0, getSubtotal() - state.itemDiscountAmount + state.effectiveDeliveryCharge)
+                }, extra || {}));
+            }
+            function renderCartItems() {
+                if (!state.cart.length) {
+                    checkoutPage.classList.add('is-empty');
+                    return;
+                }
+
+                checkoutPage.classList.remove('is-empty');
+                itemsWrap.innerHTML = state.cart.map(function (item) {
+                    var quantity = Number(item.quantity) || 1;
+                    return '' +
+                        '<div class="radios-checkout-page__item" data-cart-line="' + item.productId + '">' +
+                            '<img src="' + (item.image || 'assets/img/product/img_165.png') + '" alt="' + (item.name || 'Product') + '">' +
+                            '<div>' +
+                                '<h3>' + (item.name || 'Product') + '</h3>' +
+                                '<div class="radios-checkout-page__item-row">' +
+                                    '<div class="radios-checkout-page__qty">' +
+                                        '<button type="button" data-qty-change="-1" aria-label="Decrease quantity">-</button>' +
+                                        '<span>Qty ' + quantity + '</span>' +
+                                        '<button type="button" data-qty-change="1" aria-label="Increase quantity">+</button>' +
+                                    '</div>' +
+                                    '<strong>' + formatCurrency((Number(item.price) || 0) * quantity) + '</strong>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>';
+                }).join('');
+            }
+
+            function renderTotals(options) {
+                options = options || {};
+                var subtotal = getSubtotal();
+                var flow = window.RadiosDiscounts || discountFlow;
+
+                function applyTotals(discountAmount, evaluation) {
+                    var itemDiscountAmount = Math.max(0, Number(discountAmount) || 0);
+                    var shippingDiscountAmount = Math.min(Math.max(0, Number(evaluation && evaluation.shippingDiscountAmount) || 0), state.deliveryCharge);
+                    state.itemDiscountAmount = itemDiscountAmount;
+                    state.shippingDiscountAmount = shippingDiscountAmount;
+                    state.discountAmount = itemDiscountAmount + shippingDiscountAmount;
+                    state.effectiveDeliveryCharge = Math.max(0, state.deliveryCharge - shippingDiscountAmount);
+                    state.discountEvaluation = evaluation || null;
+
+                    var total = Math.max(0, subtotal - itemDiscountAmount + state.effectiveDeliveryCharge);
+
+                    checkoutPage.querySelector('[data-checkout-subtotal]').textContent = formatCurrency(subtotal);
+                    checkoutPage.querySelector('[data-checkout-discount]').textContent = '-' + formatCurrency(state.discountAmount);
+                    checkoutPage.querySelector('[data-checkout-delivery]').textContent = formatCurrency(state.effectiveDeliveryCharge);
+                    checkoutPage.querySelector('[data-checkout-total]').textContent = formatCurrency(total);
+
+                    return {
+                        discountAmount: state.discountAmount,
+                        itemDiscountAmount: itemDiscountAmount,
+                        evaluation: state.discountEvaluation,
+                        shippingDiscountAmount: state.shippingDiscountAmount,
+                        subtotal: subtotal,
+                        total: total
+                    };
+                }
+
+                if (!flow || typeof flow.evaluateCart !== 'function') {
+                    return Promise.resolve(applyTotals(0, null));
+                }
+
+                var signedInCustomer = window.RadiosAuth && window.RadiosAuth.readCustomer ? window.RadiosAuth.readCustomer() : null;
+                var customerEmail = (form.querySelector('[name="email"]') || {}).value || (signedInCustomer && signedInCustomer.email) || '';
+
+                return flow.evaluateCart(state.cart, state.couponCode, {
+                    authUserId: signedInCustomer && signedInCustomer.signedIn ? signedInCustomer.authUserId : '',
+                    customerEmail: customerEmail,
+                    deliveryCharge: state.deliveryCharge
+                })
+                    .then(function (result) {
+                        var pricing = applyTotals(result.discountAmount, result);
+
+                        if (options.showCouponStatus || (result.message && result.type === 'success' && !couponMessage.textContent)) {
+                            setMessage(couponMessage, result.message, result.type);
+                        } else if (!state.couponCode && !result.message) {
+                            setMessage(couponMessage, '', '');
+                        }
+
+                        return pricing;
+                    })
+                    .catch(function (error) {
+                        console.warn('Checkout discount evaluation failed.', error);
+                        if (options.showCouponStatus) {
+                            setMessage(couponMessage, 'Unable to reach the discount service. Please try again later.', 'error');
+                        }
+                        return applyTotals(0, null);
+                    });
+            }
+
+            function renderCheckout() {
+                renderCartItems();
+                renderTotals();
+                if (couponInput && state.couponCode && !couponInput.value) {
+                    couponInput.value = state.couponCode;
+                }
+            }
+
+            function updateOptionCards(groupSelector) {
+                checkoutPage.querySelectorAll(groupSelector + ' .radios-checkout-page__option').forEach(function (option) {
+                    option.classList.toggle('is-selected', option.querySelector('input').checked);
+                });
+            }
+
+            function bindOptionChanges() {
+                checkoutPage.querySelectorAll('[name="deliveryMethod"]').forEach(function (input) {
+                    input.addEventListener('change', function () {
+                        state.deliveryMethod = input.value;
+                        state.deliveryCharge = Number(input.getAttribute('data-charge')) || 0;
+                        updateOptionCards('[data-delivery-options]');
+                        renderTotals();
+                    });
+                });
+
+                checkoutPage.querySelectorAll('[name="paymentMethod"]').forEach(function (input) {
+                    input.addEventListener('change', function () {
+                        state.paymentMethod = input.value;
+                        updateOptionCards('[data-payment-options]');
+                    });
+                });
+            }
+
+            function bindQuantityControls() {
+                itemsWrap.addEventListener('click', function (event) {
+                    var button = event.target.closest('[data-qty-change]');
+                    if (!button) return;
+                    var line = button.closest('[data-cart-line]');
+                    var productId = line ? line.getAttribute('data-cart-line') : '';
+                    var delta = Number(button.getAttribute('data-qty-change')) || 0;
+
+                    state.cart = state.cart.map(function (item) {
+                        if (item.productId === productId) {
+                            item.quantity = Math.max(1, (Number(item.quantity) || 1) + delta);
+                        }
+                        return item;
+                    });
+
+                    saveCart();
+                    renderCheckout();
+            trackCheckoutAbandonedCart();
+                });
+            }
+
+            function bindCoupon() {
+                var button = checkoutPage.querySelector('[data-apply-checkout-coupon]');
+                if (!button) return;
+
+                button.addEventListener('click', function () {
+                    var flow = window.RadiosDiscounts || discountFlow;
+                    state.couponCode = (couponInput.value || '').trim().toUpperCase();
+
+                    if (!state.couponCode) {
+                        if (flow && typeof flow.clearCode === 'function') {
+                            flow.clearCode();
+                        }
+                        setMessage(couponMessage, '', '');
+                        renderTotals();
+                        return;
+                    }
+
+                    if (flow && typeof flow.saveCode === 'function') {
+                        flow.saveCode(state.couponCode);
+                    }
+                    button.disabled = true;
+                    button.textContent = 'Checking...';
+                    setMessage(couponMessage, 'Checking coupon...', 'success');
+                    renderTotals({ showCouponStatus: true }).then(function (pricing) {
+                        if (pricing && pricing.discountAmount > 0 && window.RadiosAnalytics && typeof window.RadiosAnalytics.trackEvent === 'function') {
+                            window.RadiosAnalytics.trackEvent('coupon_applied', {
+                                metadata: {
+                                    coupon_code: state.couponCode,
+                                    discount_amount: pricing.discountAmount,
+                                    subtotal: pricing.subtotal,
+                                    total: pricing.total
+                                }
+                            });
+                        }
+                    }).finally(function () {
+                        button.disabled = false;
+                        button.textContent = 'Apply';
+                    });
+                });
+            }
+
+            function clearValidation() {
+                form.querySelectorAll('.radios-checkout-page__field').forEach(function (field) {
+                    field.classList.remove('has-error');
+                });
+                setMessage(checkoutMessage, '', '');
+            }
+
+            function validateCheckout() {
+                var isValid = true;
+                clearValidation();
+
+                form.querySelectorAll('[data-required]').forEach(function (input) {
+                    if (!input.value.trim()) {
+                        input.closest('.radios-checkout-page__field').classList.add('has-error');
+                        isValid = false;
+                    }
+                });
+
+                form.querySelectorAll('[data-phone]').forEach(function (input) {
+                    var digits = input.value.replace(/\D/g, '');
+                    if (digits.length !== 10) {
+                        input.closest('.radios-checkout-page__field').classList.add('has-error');
+                        isValid = false;
+                    }
+                });
+
+                form.querySelectorAll('[data-pin]').forEach(function (input) {
+                    var digits = input.value.replace(/\D/g, '');
+                    if (digits.length !== 6) {
+                        input.closest('.radios-checkout-page__field').classList.add('has-error');
+                        isValid = false;
+                    }
+                });
+
+                form.querySelectorAll('[data-email]').forEach(function (input) {
+                    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim())) {
+                        input.closest('.radios-checkout-page__field').classList.add('has-error');
+                        isValid = false;
+                    }
+                });
+
+                if (!state.cart.length) {
+                    setMessage(checkoutMessage, 'Your cart is empty. Add products before placing an order.', 'error');
+                    isValid = false;
+                } else if (!isValid) {
+                    setMessage(checkoutMessage, 'Please check the highlighted delivery fields.', 'error');
+                }
+
+                return isValid;
+            }
+
+            function readFormData() {
+                var data = {};
+                new FormData(form).forEach(function (value, key) {
+                    data[key] = value;
+                });
+                return data;
+            }
+
+            function getCheckoutSubmitErrorMessage(error) {
+                var message = String(error && error.message ? error.message : error || '');
+                var lowerMessage = message.toLowerCase();
+
+                if (lowerMessage.indexOf('public.orders') !== -1 || lowerMessage.indexOf('public.order_items') !== -1 || lowerMessage.indexOf('schema cache') !== -1) {
+                    return 'We could not place your order right now. Please try again in a few minutes.';
+                }
+
+                if (lowerMessage.indexOf('row-level security') !== -1 || lowerMessage.indexOf('violates row-level security') !== -1 || lowerMessage.indexOf('permission denied') !== -1) {
+                    return 'We could not place your order right now. Please try again in a few minutes.';
+                }
+
+                if (lowerMessage.indexOf('failed to fetch') !== -1 || lowerMessage.indexOf('network') !== -1) {
+                    return 'Network issue while placing your order. Please check your connection and try again.';
+                }
+
+                if (lowerMessage.indexOf('out of stock') !== -1 || lowerMessage.indexOf('left in stock') !== -1 || lowerMessage.indexOf('stock') !== -1) {
+                    return message;
+                }
+
+                if (message === SUPABASE_CONFIG_ERROR) {
+                    return 'Checkout is temporarily unavailable. Please try again later.';
+                }
+
+                return 'Unable to place order. Please try again.';
+            }
+
+            function buildOrderPayload(order, includeTrackingColumns, includeCustomerColumns, includeLifecycleColumns, includePromotionColumns) {
+                var paymentStatus = order.paymentMethod === 'cash_on_delivery' ? 'cod_pending' : 'pending';
+                var orderPayload = {
+                    order_number: order.orderNumber,
+                    customer_name: order.customer.fullName,
+                    customer_email: order.customer.email,
+                    customer_phone: order.customer.phone,
+                    delivery_address: [order.deliveryAddress.house, order.deliveryAddress.street].filter(Boolean).join(', '),
+                    city: order.deliveryAddress.city,
+                    state: order.deliveryAddress.state,
+                    pincode: order.deliveryAddress.pinCode,
+                    payment_method: order.paymentMethod,
+                    delivery_method: order.deliveryMethod,
+                    subtotal: order.pricing.subtotal,
+                    discount: order.pricing.discount,
+                    delivery_charge: order.pricing.deliveryCharge,
+                    total: order.pricing.total,
+                    status: 'pending',
+                    payment_status: paymentStatus,
+                    notes: order.notes
+                };
+
+                if (includeTrackingColumns) {
+                    orderPayload.tracking_id = order.trackingId;
+                    orderPayload.tracking_status = 'Order Placed';
+                    orderPayload.estimated_delivery_date = order.estimatedDeliveryDate;
+                }
+
+                if (includeLifecycleColumns) {
+                    orderPayload.order_status = 'pending';
+                    orderPayload.fulfillment_status = 'unfulfilled';
+                    orderPayload.refund_status = 'none';
+                    orderPayload.invoice_number = order.invoiceNumber;
+                    orderPayload.courier_tracking_number = order.trackingId;
+                }
+
+                if (includeCustomerColumns) {
+                    if (order.customer.authUserId) {
+                        orderPayload.auth_user_id = order.customer.authUserId;
+                    }
+                    if (order.customer.customerId) {
+                        orderPayload.customer_id = order.customer.customerId;
+                    }
+                }
+
+                if (includePromotionColumns && order.promotion) {
+                    orderPayload.coupon_code = order.promotion.couponCode || null;
+                    orderPayload.discount_id = isUuid(order.promotion.discountId) ? order.promotion.discountId : null;
+                    orderPayload.discount_amount = order.pricing.discount;
+                    orderPayload.promotion_title = order.promotion.title || null;
+                }
+
+                return orderPayload;
+            }
+
+            function insertOrderNotification(order, createdOrder) {
+                var customerName = createdOrder.customer_name || order.customer.fullName || 'Customer';
+                var trackingId = createdOrder.tracking_id || createdOrder.order_number || order.trackingId || order.orderNumber || '';
+                var total = Number(createdOrder.total != null ? createdOrder.total : order.pricing.total) || 0;
+
+                return supabaseRequest('notifications', {
+                    method: 'POST',
+                    body: {
+                        type: 'order',
+                        title: 'New Order Received',
+                        message: 'Order from ' + customerName + (trackingId ? ' - ' + trackingId : '') + ' - ' + formatCurrency(total),
+                        order_id: createdOrder.id,
+                        tracking_id: trackingId,
+                        customer_name: customerName,
+                        customer_phone: createdOrder.customer_phone || order.customer.phone || '',
+                        customer_email: createdOrder.customer_email || order.customer.email || '',
+                        total: total,
+                        is_read: false
+                    },
+                    prefer: 'return=minimal'
+                }).then(function () {
+                    return createdOrder;
+                });
+            }
+
+            function insertInitialOrderHistory(order, createdOrder) {
+                return supabaseRequest('order_status_history', {
+                    method: 'POST',
+                    body: {
+                        order_id: createdOrder.id,
+                        status: createdOrder.order_status || createdOrder.status || 'pending',
+                        status_type: 'order',
+                        note: 'Order placed successfully',
+                        created_by: 'storefront'
+                    },
+                    prefer: 'return=minimal'
+                }).catch(function (error) {
+                    console.warn('Initial order status history insert failed.', error);
+                });
+            }
+
+            function insertOrderRows(order, orderPayload) {
+                return supabaseRequest('orders', {
+                    method: 'POST',
+                    body: orderPayload,
+                    prefer: 'return=representation'
+                }).then(function (orders) {
+                    var createdOrder = Array.isArray(orders) ? orders[0] : orders;
+
+                    if (!createdOrder || !createdOrder.id) {
+                        throw new Error('Supabase did not return the created order.');
+                    }
+
+                    var itemsPayload = order.products.map(function (item) {
+                        var quantity = Number(item.quantity) || 1;
+                        var price = Number(item.price) || 0;
+                        return {
+                            order_id: createdOrder.id,
+                            product_id: isUuid(item.productId || item.id) ? (item.productId || item.id) : null,
+                            product_name: item.name || item.title || item.productName || 'Product',
+                            quantity: quantity,
+                            price: price,
+                            total: price * quantity
+                        };
+                    });
+
+                    return supabaseRequest('order_items', {
+                        method: 'POST',
+                        body: itemsPayload,
+                        prefer: 'return=minimal'
+                    }).then(function () {
+                        return insertInitialOrderHistory(order, createdOrder).then(function () {
+                            return insertOrderNotification(order, createdOrder).catch(function (error) {
+                                console.warn('Order notification insert failed.', error);
+                                return createdOrder;
+                            });
+                        }).catch(function (error) {
+                            console.warn('Order notification insert failed.', error);
+                            return createdOrder;
+                        });
+                    });
+                });
+            }
+
+            function submitOrderToSupabase(order) {
+                var baseAttempts = [
+                    { tracking: true, customer: true, lifecycle: true },
+                    { tracking: true, customer: false, lifecycle: true },
+                    { tracking: false, customer: true, lifecycle: true },
+                    { tracking: false, customer: false, lifecycle: true },
+                    { tracking: true, customer: true, lifecycle: false },
+                    { tracking: true, customer: false, lifecycle: false },
+                    { tracking: false, customer: true, lifecycle: false },
+                    { tracking: false, customer: false, lifecycle: false }
+                ];
+                var attempts = baseAttempts.map(function (attempt) {
+                    return Object.assign({ promotion: true }, attempt);
+                }).concat(baseAttempts.map(function (attempt) {
+                    return Object.assign({ promotion: false }, attempt);
+                }));
+
+                function attempt(index, lastError) {
+                    if (index >= attempts.length) {
+                        throw lastError;
+                    }
+
+                    var flags = attempts[index];
+                    return insertOrderRows(order, buildOrderPayload(order, flags.tracking, flags.customer, flags.lifecycle, flags.promotion)).catch(function (error) {
+                        if (isMissingCustomerColumnError(error) || isMissingTrackingColumnError(error) || isMissingLifecycleColumnError(error) || isMissingPromotionColumnError(error)) {
+                            console.warn('Retrying checkout order insert with legacy-safe columns.', error);
+                            return attempt(index + 1, error);
+                        }
+
+                        throw error;
+                    });
+                }
+
+                return attempt(0, null);
+            }
+
+            async function placeOrder(event) {
+                if (event) event.preventDefault();
+
+                if (state.isSubmitting) {
+                    return;
+                }
+
+                if (!validateCheckout()) {
+                    return;
+                }
+
+                setSubmitting(true);
+                var pricing = await renderTotals({ showCouponStatus: false });
+                var subtotal = pricing.subtotal;
+                var total = pricing.total;
+                var formData = readFormData();
+                var signedInCustomer = window.RadiosAuth && window.RadiosAuth.readCustomer ? window.RadiosAuth.readCustomer() : null;
+                var selectedPromotion = pricing.evaluation && pricing.evaluation.selectedDiscount;
+                var promotionDiscount = selectedPromotion && selectedPromotion.discount ? selectedPromotion.discount : {};
+                var trackingId = generateTrackingId();
+                var order = {
+                    orderNumber: trackingId,
+                    trackingId: trackingId,
+                    invoiceNumber: generateInvoiceNumber(),
+                    customer: {
+                        fullName: formData.fullName,
+                        phone: formData.phone,
+                        email: formData.email,
+                        authUserId: signedInCustomer && signedInCustomer.signedIn ? signedInCustomer.authUserId : '',
+                        customerId: signedInCustomer && signedInCustomer.signedIn ? signedInCustomer.customerId : ''
+                    },
+                    deliveryAddress: {
+                        house: formData.house,
+                        street: formData.street,
+                        city: formData.city,
+                        state: formData.state,
+                        pinCode: formData.pinCode,
+                        saveAddress: Boolean(formData.saveAddress)
+                    },
+                    deliveryMethod: state.deliveryMethod,
+                    paymentMethod: state.paymentMethod,
+                    notes: formData.notes || '',
+                    products: state.cart,
+                    pricing: {
+                        subtotal: subtotal,
+                        discount: pricing.discountAmount,
+                        itemDiscount: pricing.itemDiscountAmount || 0,
+                        shippingDiscount: pricing.shippingDiscountAmount || 0,
+                        deliveryCharge: state.deliveryCharge,
+                        total: total
+                    },
+                    promotion: {
+                        couponCode: (pricing.evaluation && pricing.evaluation.appliedCode) || state.couponCode || '',
+                        discountId: (pricing.evaluation && pricing.evaluation.discountId) || promotionDiscount.id || '',
+                        title: selectedPromotion ? selectedPromotion.title : ''
+                    },
+                    estimatedDeliveryDate: getEstimatedDeliveryDate(state.deliveryMethod),
+                    status: 'pending'
+                };
+
+                setMessage(checkoutMessage, 'Placing order...', 'success');
+                var reservedInventory = false;
+
+                try {
+                    if (window.RadiosInventory) {
+                        await window.RadiosInventory.releaseExpired().catch(function () { return 0; });
+                        var stockValidation = await window.RadiosInventory.validateCart(state.cart);
+                        if (!stockValidation.ok) {
+                            throw new Error(stockValidation.message || 'Some cart items are not available in the requested quantity.');
+                        }
+
+                        await window.RadiosInventory.reserveCart(state.cart);
+                        reservedInventory = true;
+                    }
+
+                    var createdOrder = await submitOrderToSupabase(order);
+                    if (window.RadiosAnalytics && typeof window.RadiosAnalytics.trackEvent === 'function') {
+                        await window.RadiosAnalytics.trackEvent('order_created', {
+                            orderId: createdOrder && createdOrder.id,
+                            customer: order.customer,
+                            metadata: {
+                                order_number: createdOrder && (createdOrder.order_number || createdOrder.orderId) || order.orderNumber,
+                                subtotal: subtotal,
+                                discount: pricing.discountAmount,
+                                delivery_charge: state.deliveryCharge,
+                                total: total,
+                                payment_method: state.paymentMethod,
+                                coupon_code: order.promotion.couponCode || null,
+                                items: state.cart.map(function (item) {
+                                    return {
+                                        product_id: item.productId || item.id || '',
+                                        name: item.name || item.title || 'Product',
+                                        quantity: Number(item.quantity) || 1,
+                                        price: Number(item.price) || 0
+                                    };
+                                })
+                            }
+                        });
+                    }
+
+                    if (createdOrder && createdOrder.id && window.RadiosDiscounts && typeof window.RadiosDiscounts.finalizeRedemption === 'function') {
+                        await window.RadiosDiscounts.finalizeRedemption(createdOrder.id, state.cart, {
+                            authUserId: order.customer.authUserId,
+                            customerEmail: order.customer.email,
+                            evaluation: pricing.evaluation
+                        });
+                    }
+
+                    if (window.RadiosAbandonedCart && typeof window.RadiosAbandonedCart.markConverted === 'function') {
+                        await window.RadiosAbandonedCart.markConverted(createdOrder && createdOrder.id, state.cart, {
+                            customer: order.customer,
+                            discount: pricing.discountAmount,
+                            total: total
+                        });
+                    }
+
+                    if (window.RadiosInventory && createdOrder && createdOrder.id) {
+                        await window.RadiosInventory.completeOrder(createdOrder.id, state.cart);
+                    }
+
+                    localStorage.setItem(LAST_ORDER_KEY, JSON.stringify({
+                        order: order,
+                        supabaseOrder: createdOrder
+                    }));
+                    persistCheckoutCustomer(formData);
+                    await saveCheckoutAddress(formData, signedInCustomer);
+                    localStorage.setItem('radios-last-tracking-id', order.trackingId);
+                    localStorage.removeItem(CART_KEY);
+                    if (window.RadiosDiscounts && typeof window.RadiosDiscounts.clearCode === 'function') {
+                        window.RadiosDiscounts.clearCode();
+                    }
+                    window.location.href = 'order-success.html?tracking_id=' + encodeURIComponent(order.trackingId);
+                } catch (error) {
+                    if (reservedInventory && window.RadiosInventory) {
+                        await window.RadiosInventory.releaseCart().catch(function () { return 0; });
+                    }
+                    setSubmitting(false);
+                    console.error('Checkout order submission failed:', error);
+                    setMessage(checkoutMessage, getCheckoutSubmitErrorMessage(error), 'error');
+                }
+            }
+
+            form.addEventListener('input', function () {
+                window.clearTimeout(form.abandonedCartTimer);
+                form.abandonedCartTimer = window.setTimeout(function () {
+                    trackCheckoutAbandonedCart();
+                }, 700);
+            });
+
+            form.addEventListener('submit', placeOrder);
+            if (mobilePlaceButton) {
+                mobilePlaceButton.addEventListener('click', placeOrder);
+            }
+
+            if (window.RadiosAuth) {
+                hydrateCustomerDetails(window.RadiosAuth.readCustomer());
+                window.RadiosAuth.refreshSessionCustomer()
+                    .then(function (customer) {
+                        hydrateCustomerDetails(customer);
+                        return hydrateDefaultAddress(customer);
+                    })
+                    .catch(function () {
+                        hydrateCustomerDetails(window.RadiosAuth.readCustomer());
+                    });
+            } else {
+                hydrateCustomerDetails(null);
+            }
+
+            updateDeliveryDates();
+            bindOptionChanges();
+            bindQuantityControls();
+            bindCoupon();
+            renderCheckout();
+            trackCheckoutAbandonedCart();
+        });
+    </script>
+</body>
+
+</html>
+
+

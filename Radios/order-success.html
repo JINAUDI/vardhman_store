@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Your Radios order was placed successfully. View your tracking ID, order history, or continue shopping.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Order Success - Radios</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="images/x-icon" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/metisMenu.css?v=nav-clean-3">
+    <link rel="stylesheet" href="assets/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/main.css?v=header-gradient-1">
+</head>
+
+<body>
+    <div class="body_wrap">
+        <main>
+            <section class="radios-order-success-page">
+                <div class="container">
+                    <div class="radios-order-success-page__card">
+                        <a class="radios-order-success-page__brand" href="index.html" aria-label="Radios home">
+                            <img src="assets/img/logo/logo.svg" alt="Radios">
+                        </a>
+                        <span class="radios-order-success-page__eyebrow">Order confirmed</span>
+                        <h1>Your order has been placed.</h1>
+                        <p>Thank you for shopping with Radios. Use the tracking ID below to follow your order status.</p>
+                        <div class="radios-order-success-page__order-id">
+                            <span>Tracking ID</span>
+                            <strong data-order-success-tracking>Loading...</strong>
+                        </div>
+                        <div class="radios-order-success-page__actions">
+                            <a href="my-orders.html" class="radios-order-success-page__primary">View My Orders</a>
+                            <a href="track-order.html" class="radios-order-success-page__secondary" data-track-order-link>Track Order</a>
+                            <a href="shop-left-sidebar.html" class="radios-order-success-page__secondary">Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/resize-sensor.min.js"></script>
+    <script src="assets/js/theia-sticky-sidebar.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jqueryui.js"></script>
+    <script src="assets/js/touchspin.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/custom-dropdown.js"></script>
+    <script src="assets/js/main.js?v=mobile-header-2"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var params = new URLSearchParams(window.location.search);
+            var trackingId = params.get('tracking_id') || 'Unavailable';
+            var target = document.querySelector('[data-order-success-tracking]');
+            var trackLink = document.querySelector('[data-track-order-link]');
+            if (target) {
+                target.textContent = trackingId;
+            }
+            if (trackLink && trackingId !== 'Unavailable') {
+                trackLink.href = 'track-order.html?tracking_id=' + encodeURIComponent(trackingId);
+            }
+        });
+    </script>
+</body>
+
+</html>
+

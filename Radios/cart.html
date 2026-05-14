@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--========= Required meta tags =========-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Review your Radios cart, update quantities, apply coupons, and continue to secure checkout.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Cart - Radios</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="images/x-icon" />
+
+    <!-- css include -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/metisMenu.css?v=nav-clean-3">
+    <link rel="stylesheet" href="assets/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/main.css?v=header-gradient-1">
+</head>
+
+<body>
+
+    <div class="body_wrap">
+
+        <!-- preloder start  -->
+        <div class="preloder_part">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+        <!-- preloder end  -->
+
+        <!-- back to top start -->
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!-- back to top end -->
+
+        <!-- header start -->
+        <header class="header header__style-one">
+            <div class="mobile-header-enhanced" aria-label="Mobile storefront header">
+                <div class="mobile-header-enhanced__top">
+                    <button class="mobile-menu-toggle" type="button" aria-label="Open menu">
+                        <i class="fal fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <a href="index.html" class="mobile-header-enhanced__logo" aria-label="Radios home">
+                        <img src="assets/img/logo/logo.svg" alt="Radios">
+                    </a>
+                    <a href="cart.html" class="mobile-header-enhanced__cart" aria-label="Cart">
+                        <img src="assets/img/icon/shopping_bag.svg" alt="">
+                        <span class="count">0</span>
+                    </a>
+                </div>
+                <form class="mobile-header-enhanced__search header-mobile-search" role="search" method="get" action="shop-left-sidebar.html">
+                    <input type="text" name="search" placeholder="Search products" aria-label="Search products">
+                    <button type="submit" aria-label="Search"><i class="far fa-search" aria-hidden="true"></i></button>
+                </form>
+                <div class="mobile-header-enhanced__quick-links" aria-label="Quick links">
+                    <a href="track-order.html"><i class="far fa-truck" aria-hidden="true"></i><span>Track Order</span></a>
+                    <a href="my-orders.html"><i class="far fa-clipboard-list" aria-hidden="true"></i><span>My Orders</span></a>
+                    <a href="account.html" data-mobile-auth-link><i class="far fa-user" aria-hidden="true"></i><span data-mobile-auth-label>Login / Sign Up</span></a>
+                </div>
+            </div>
+            <div class="header__top-info-wrap d-none d-lg-block">
+                <div class="container">
+                    <div class="header__top-info ul_li_between mt-none-10">
+                        <ul class="ul_li mt-10">
+                            <li><i class="far fa-map-marker-alt"></i>Online Storefront</li>
+                            <li><a href="track-order.html"><i class="far fa-truck"></i>Track Your Order</a></li>
+                            <li><a href="tel:18006543210"><i class="fas fa-phone"></i>1-800-654-3210</a></li>
+                            <li><i class="fas fa-heart"></i>Welcome to Radios. We provide quality products at best prices.</li>
+                        </ul>
+                        <div class="header__top-right ul_li mt-10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__middle ul_li_between justify-content-xs-center">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="assets/img/logo/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <form class="header__search-box" action="shop-left-sidebar.html" method="get">
+                        <div class="select-box">
+                            <select id="category" name="category" style="display:none;">
+                                <option value="">All Categories</option>
+                                <option value="baby-products">Baby Products</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="health-supplements">Health Supplements</option>
+                                <option value="household-items">Household Items</option>
+                                <option value="hygiene-personal-care">Hygiene & Personal Care</option>
+                                <option value="mobile-accessories">Mobile Accessories</option>
+                            </select>
+                            <div class="custom-category-dropdown" id="customCategoryDropdown" tabindex="0"
+                                role="combobox" aria-expanded="false" aria-haspopup="listbox"
+                                aria-label="All Categories">
+                                <div class="custom-category-dropdown__selected">
+                                    <span class="custom-category-dropdown__text">All Categories</span>
+                                    <i class="far fa-chevron-down custom-category-dropdown__arrow"></i>
+                                </div>
+                                <ul class="custom-category-dropdown__menu" id="customCategoryMenu" role="listbox">
+                                    <li class="custom-category-dropdown__item" data-value="" role="option"
+                                        tabindex="-1">All Categories</li>
+                                    <li class="custom-category-dropdown__item" data-value="baby-products" role="option"
+                                        tabindex="-1">Baby Products</li>
+                                    <li class="custom-category-dropdown__item" data-value="electronics" role="option"
+                                        tabindex="-1">Electronics</li>
+                                    <li class="custom-category-dropdown__item" data-value="health-supplements" role="option"
+                                        tabindex="-1">Health Supplements</li>
+                                    <li class="custom-category-dropdown__item" data-value="household-items" role="option"
+                                        tabindex="-1">Household Items</li>
+                                    <li class="custom-category-dropdown__item" data-value="hygiene-personal-care" role="option"
+                                        tabindex="-1">Hygiene & Personal Care</li>
+                                    <li class="custom-category-dropdown__item" data-value="mobile-accessories" role="option"
+                                        tabindex="-1">Mobile Accessories</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="text" name="search" id="search" placeholder="Search For Products" required />
+                        <button type="submit"><i class="far fa-search"></i>
+                        </button>
+                    </form>
+                    <div class="header__lang ul_li">
+                        <div class="header__language mr-15">
+                            <span class="lang-btn" style="cursor:default;"><svg width="18" height="12"
+                                    viewBox="0 0 18 12"
+                                    style="vertical-align:middle;margin-right:5px;border-radius:1px;">
+                                    <rect width="18" height="4" fill="#FF9933" />
+                                    <rect y="4" width="18" height="4" fill="#fff" />
+                                    <rect y="8" width="18" height="4" fill="#138808" />
+                                    <circle cx="9" cy="6" r="1.5" fill="#000080" />
+                                </svg>INR</span>
+                        </div>
+                        <div class="header__language">
+                            <span class="lang-btn" style="cursor:default;">EN</span>
+                        </div>
+                    </div>
+                    <div class="header__icons ul_li">
+                        <div class="icon">
+                            <a href="account.html"><img src="assets/img/icon/user.svg" alt="Account"></a>
+                        </div>
+                        <div class="icon wishlist-icon">
+                            <a href="wishlist.html">
+                                <img src="assets/img/icon/heart.svg" alt="">
+                                <span class="count">0</span>
+                            </a>
+                        </div>
+                        <a href="cart.html" class="icon shopping-bag header-cart-link" aria-label="View cart">
+                            <img src="assets/img/icon/shopping_bag.svg" alt="">
+                            <span class="count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__cat-wrap" data-uk-sticky="top: 250; animation: uk-animation-slide-top;">
+                <div class="container">
+                    <div class="header__wrap ul_li_between">
+                        <div class="header__cat ul_li">
+                            <div class="hamburger_menu">
+                                <a href="javascript:void(0);" class="active">
+                                    <div class="icon bar">
+                                        <span><i class="fal fa-bars"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                                
+                            <ul class="category ul_li">
+                                <li>
+                                    <a href="category.html?slug=electronics"><span><i class="fas fa-laptop"></i></span>Electronics</a>
+                                </li>
+                                <li>
+                                    <a href="category.html?slug=mobile-accessories"><span><i class="fas fa-headphones"></i></span>Mobile Accessories</a>
+                                </li>
+                                <li>
+                                    <a href="category.html?slug=health-supplements"><span><i class="fas fa-capsules"></i></span>Health Supplements</a>
+                                </li>
+                                <li>
+                                    <a href="category.html?slug=hygiene-personal-care"><span><i class="fas fa-heart"></i></span>Hygiene &amp; Personal Care</a>
+                                </li>
+                                <li>
+                                    <a href="category.html?slug=baby-products"><span><i class="fas fa-baby"></i></span>Baby Products</a>
+                                </li>
+                                <li>
+                                    <a href="category.html?slug=household-items"><span><i class="fas fa-home"></i></span>Household Items</a>
+                                </li>
+                            </ul>
+
+                        <div class="login-sign-btn">
+                            <a class="thm-btn" href="account.html">
+                                <span class="btn-wrap">
+                                    <span>Login / Sign Up</span>
+                                    <span>Login / Sign Up</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <!-- slide-bar start -->
+        <aside class="slide-bar">
+            <div class="close-mobile-menu">
+                <a href="javascript:void(0);"><i class="fal fa-times"></i></a>
+            </div>
+            <!-- sidebar-info start -->
+            <div class="cart_sidebar">
+                <button type="button" class="cart_close_btn"><i class="fal fa-times"></i></button>
+                <h2 class="heading_title text-uppercase">Cart Items - <span>0</span></h2>
+                <div class="cart_items_list">
+                    <div class="cart_item">
+                        <div class="item_content">
+                            <h4 class="item_title">
+                                Your cart is empty
+                            </h4>
+                            <span class="item_price">Add products from the catalog.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="total_price text-uppercase">
+                    <span>Sub Total:</span>
+                    <span>INR 0</span>
+                </div>
+                <ul class="btns_group ul_li">
+                    <li><a href="cart.html" class="thm-btn">
+                            <span class="btn-wrap">
+                                <span>View Cart</span>
+                                <span>View Cart</span>
+                            </span>
+                        </a></li>
+                    <li><a href="checkout.html" class="thm-btn thm-btn__black">
+                            <span class="btn-wrap">
+                                <span>Checkout</span>
+                                <span>Checkout</span>
+                            </span>
+                        </a></li>
+                </ul>
+            </div>
+            <!-- sidebar-info end -->
+
+            <!-- side-mobile-menu start -->
+            <nav class="side-mobile-menu">
+                <div class="header-mobile-search">
+                    <form role="search" method="get" action="shop-left-sidebar.html">
+                        <input type="text" name="search" placeholder="Search Keywords">
+                        <button type="submit"><i class="ti-search"></i></button>
+                    </form>
+                </div>
+                <ul id="mobile-menu-active" class="radios-mobile-nav radios-mobile-nav__main">
+                    <li class="radios-mobile-nav__section" aria-hidden="true">Main Menu</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop-left-sidebar.html">Shop</a></li>
+                    <li><a href="my-orders.html">My Orders</a></li>
+                    <li><a href="track-order.html">Track Order</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="wishlist.html">Wishlist <span data-wishlist-count>0</span></a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="radios-mobile-nav__divider" aria-hidden="true"></li>
+                    <li class="radios-mobile-nav__category-group">
+                        <button class="radios-mobile-nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-category-menu">
+                            <span>Shop by Category</span>
+                            <i class="far fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <ul id="mobile-category-menu" class="radios-mobile-nav__categories" hidden>
+                            <li><a href="category.html?slug=electronics">Electronics</a></li>
+                            <li><a href="category.html?slug=mobile-accessories">Mobile Accessories</a></li>
+                            <li><a href="category.html?slug=health-supplements">Health Supplements</a></li>
+                            <li><a href="category.html?slug=hygiene-personal-care">Hygiene &amp; Personal Care</a></li>
+                            <li><a href="category.html?slug=baby-products">Baby Products</a></li>
+                            <li><a href="category.html?slug=household-items">Household Items</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- side-mobile-menu end -->
+        </aside>
+        <div class="body-overlay"></div>
+        <!-- slide-bar end -->
+
+        <main>
+
+            <!-- breadcrumb start -->
+            <section class="breadcrumb-area">
+                <div class="container">
+                    <div class="radios-breadcrumb breadcrumbs">
+                        <ul class="list-unstyled d-flex align-items-center">
+                            <li class="radiosbcrumb-item radiosbcrumb-begin">
+                                <a href="index.html"><span>Home</span></a>
+                            </li>
+                            <li class="radiosbcrumb-item radiosbcrumb-end">
+                                <span>Cart</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb end -->
+
+                        <!-- start cart-section -->
+            <section class="cart-section woocommerce-cart radios-cart-page pb-80">
+                <div class="container">
+                    <div class="cart-page-modern">
+                        <div class="cart-page-modern__heading">
+                            <span class="cart-page-modern__eyebrow">Shopping Cart</span>
+                            <h1>Your Cart</h1>
+                            <p>Review your products, update quantities, and continue to checkout.</p>
+                        </div>
+                        <div class="cart-layout">
+                            <section class="cart-items-panel" aria-labelledby="cartItemsTitle">
+                                <div class="cart-items-panel__header">
+                                    <h2 id="cartItemsTitle">Cart Items</h2>
+                                    <a href="shop-left-sidebar.html">Continue Shopping</a>
+                                </div>
+                                <div id="cartItemsContainer" class="cart-items-list"></div>
+                            </section>
+                            <aside class="order-summary-panel" id="orderSummaryPanel" aria-labelledby="orderSummaryTitle">
+                                <h3 id="orderSummaryTitle">Order Summary</h3>
+                                <form class="cart-page-modern__coupon woocommerce-cart-form" action="cart.html" method="post">
+                                    <label for="coupon_code">Coupon code</label>
+                                    <div class="cart-page-modern__coupon-row">
+                                        <input type="text" name="coupon_code" id="coupon_code" placeholder="Enter coupon code">
+                                        <button type="submit">Apply Coupon</button>
+                                    </div>
+                                </form>
+                                <div class="summary-row">
+                                    <span>Subtotal</span>
+                                    <strong id="cartSubtotal">&#8377;0</strong>
+                                </div>
+                                <div class="summary-row" id="cartDiscountRow">
+                                    <span>Discount</span>
+                                    <strong id="cartDiscount">&#8377;0</strong>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Delivery</span>
+                                    <strong id="cartDelivery">Free</strong>
+                                </div>
+                                <div class="summary-total">
+                                    <span>Total</span>
+                                    <strong id="cartTotal">&#8377;0</strong>
+                                </div>
+                                <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end cart-section -->
+
+        </main>
+
+        <!-- footer start -->
+<footer class="footer radios-footer">
+    <div class="radios-footer__top">
+        <div class="container">
+            <div class="radios-footer__newsletter">
+                <div>
+                    <span class="radios-footer__eyebrow">Radios Care</span>
+                    <h2>Electronics, essentials, and order help in one place</h2>
+                    <p>Get product updates, order support, and useful store news from Radios.</p>
+                </div>
+                <form class="radios-footer__form" action="contact.html" method="get">
+                    <input name="email" placeholder="Enter your email" type="email" aria-label="Email address">
+                    <button type="submit">Get Updates</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="radios-footer__main">
+            <div class="footer__widget radios-footer__brand">
+                <a class="radios-footer__logo" href="index.html"><img src="assets/img/logo/logo.svg" alt="Radios"></a>
+                <p>Radios brings together electronics, mobile accessories, daily essentials, and personal care products with INR pricing and reliable checkout.</p>
+                <ul class="radios-footer__info">
+                    <li><i class="far fa-envelope"></i><span>Support: <a href="mailto:radios.support@gmail.com">radios.support@gmail.com</a></span></li>
+                    <li><i class="fas fa-phone"></i><span>Help line: <a href="tel:18006543210">1-800-654-3210</a></span></li>
+                    <li><i class="fas fa-truck"></i><span>Orders: <a href="track-order.html">Track order status</a></span></li>
+                </ul>
+            </div>
+            <nav class="footer__widget" aria-label="Shop categories">
+                <h2 class="title">Shop</h2>
+                <ul class="quick-links">
+                    <li><a href="shop-left-sidebar.html">All Products</a></li>
+                    <li><a href="category.html?slug=electronics">Electronics</a></li>
+                    <li><a href="category.html?slug=mobile-accessories">Mobile Accessories</a></li>
+                    <li><a href="category.html?slug=health-supplements">Health Supplements</a></li>
+                    <li><a href="category.html?slug=hygiene-personal-care">Hygiene & Personal Care</a></li>
+                    <li><a href="category.html?slug=baby-products">Baby Products</a></li>
+                    <li><a href="category.html?slug=household-items">Household Items</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__widget" aria-label="Customer account">
+                <h2 class="title">Account</h2>
+                <ul class="quick-links">
+                    <li><a href="account.html">Login / Sign Up</a></li>
+                    <li><a href="account-dashboard.html">Account Dashboard</a></li>
+                    <li><a href="my-orders.html">My Orders</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__widget" aria-label="Store help">
+                <h2 class="title">Help</h2>
+                <ul class="quick-links">
+                    <li><a href="contact.html">Contact Support</a></li>
+                    <li><a href="track-order.html">Track Order</a></li>
+                    <li><a href="returns.html">Returns</a></li>
+                    <li><a href="addresses.html">Saved Addresses</a></li>
+                    <li><a href="customer-notifications.html">Notifications</a></li>
+                    <li><a href="about.html">About Radios</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="radios-footer__trust">
+            <div><strong>Secure checkout</strong><span>Cart, discounts, and orders stay connected to your account.</span></div>
+            <div><strong>Live inventory</strong><span>Products reflect stock and visibility from the dashboard.</span></div>
+            <div><strong>Customer support</strong><span>Track orders, manage returns, and get help from one place.</span></div>
+        </div>
+        <div class="radios-footer__bottom">
+            <div class="radios-footer__copyright">&copy; 2026 Radios. All Rights Reserved. INR pricing for storefront orders.</div>
+            <div class="radios-footer__social" aria-label="Social links">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="payment_method"><img src="assets/img/bg/payment_method.png" alt="Accepted payment methods"></div>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+        <!-- start newsletter-popup-area-section -->
+        <section class="newsletter-popup-area-section">
+            <div class="newsletter-popup-area">
+                <div class="newsletter-popup-ineer">
+                    <button class="btn newsletter-close-btn"><i class="fal fa-times"></i></button>
+                    <div class="img-holder">
+                        <img src="assets/img/bg/newsletter.jpg" alt>
+                    </div>
+                    <div class="details">
+                        <h4>Get Radios updates in your inbox</h4>
+                        <p>Product updates, order support notes, and useful store news from Radios.</p>
+                        <form action="contact.html" method="get">
+                            <div>
+                                <input type="email" name="email" placeholder="Enter your email" />
+                                <button type="submit">Get Updates</button>
+                            </div>
+                            <div>
+                                <label class="checkbox-holder"> Don't show this popup again.
+                                    <input type="checkbox" class="show-message">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end newsletter-popup-area-section -->
+        <!-- start cookies-area -->
+        <div class="cookies-area">
+            <p>This website uses cookies to improve your shopping experience. For privacy questions, contact Radios support.</p>
+            <a href="contact.html" class="read-more">Contact Support</a>
+            <div>
+                <button class="cookie-btn">Accept</button>
+            </div>
+        </div>
+        <!-- end cookies-area -->
+
+
+    </div>
+
+    <!-- jquery include -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/backToTop.js"></script>
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/resize-sensor.min.js"></script>
+    <script src="assets/js/theia-sticky-sidebar.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jqueryui.js"></script>
+    <script src="assets/js/touchspin.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/custom-dropdown.js"></script>
+    <script src="assets/js/main.js?v=mobile-header-2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/supabase-config.js"></script>
+    <script src="assets/js/radios-auth.js?v=auth-complete-1"></script>
+    <script src="assets/js/storefront-api.js?v=abandoned-cart-1"></script>
+</body>
+
+</html>
+
+
+
+
+

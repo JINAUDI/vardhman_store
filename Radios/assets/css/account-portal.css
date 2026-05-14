@@ -1,0 +1,385 @@
+.radios-account-area {
+  --account-accent: #ff7a00;
+  --account-text: #111827;
+  --account-muted: #667085;
+  --account-border: #e5e7eb;
+  --account-surface: #ffffff;
+  --account-soft: #f8fafc;
+  padding: 48px 0 80px;
+  background: #f6f7fb;
+}
+
+.radios-account-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 22px;
+}
+
+.radios-account-sidebar,
+.radios-account-panel,
+.radios-account-card,
+.radios-account-form {
+  background: var(--account-surface);
+  border: 1px solid var(--account-border);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+.radios-account-sidebar {
+  align-self: start;
+  padding: 18px;
+  position: sticky;
+  top: 96px;
+}
+
+.radios-account-user {
+  display: grid;
+  gap: 6px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--account-border);
+}
+
+.radios-account-user strong {
+  color: var(--account-text);
+  font-size: 16px;
+}
+
+.radios-account-user span {
+  color: var(--account-muted);
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.radios-account-nav {
+  display: grid;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.radios-account-nav a,
+.radios-account-button,
+.radios-account-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.radios-account-nav a {
+  justify-content: flex-start;
+  padding: 0 12px;
+  color: var(--account-text);
+}
+
+.radios-account-nav a.is-active,
+.radios-account-nav a:hover {
+  background: rgba(255, 122, 0, 0.1);
+  color: var(--account-accent);
+}
+
+.radios-account-main {
+  min-width: 0;
+}
+
+.radios-account-header {
+  margin-bottom: 18px;
+}
+
+.radios-account-header span {
+  color: var(--account-accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.radios-account-header h1 {
+  margin: 6px 0 0;
+  color: var(--account-text);
+  font-size: 30px;
+}
+
+.radios-account-header p {
+  margin: 8px 0 0;
+  color: var(--account-muted);
+  font-size: 14px;
+}
+
+.radios-account-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.radios-account-card {
+  padding: 18px;
+}
+
+.radios-account-card strong {
+  display: block;
+  color: var(--account-text);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.radios-account-card span {
+  display: block;
+  margin-top: 8px;
+  color: var(--account-muted);
+  font-size: 13px;
+}
+
+.radios-account-panel {
+  padding: 22px;
+}
+
+.radios-account-panel + .radios-account-panel {
+  margin-top: 16px;
+}
+
+.radios-account-panel h2 {
+  margin: 0 0 14px;
+  color: var(--account-text);
+  font-size: 20px;
+}
+
+.radios-account-list {
+  display: grid;
+  gap: 12px;
+}
+
+.radios-account-row {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  border: 1px solid var(--account-border);
+  border-radius: 14px;
+  background: var(--account-soft);
+}
+
+.radios-account-row-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.radios-account-row strong {
+  color: var(--account-text);
+}
+
+.radios-account-row p {
+  margin: 0;
+  color: var(--account-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.radios-account-status {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0 10px;
+  background: rgba(255, 122, 0, 0.12);
+  color: var(--account-accent);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.radios-account-status.is-success {
+  background: rgba(39, 174, 96, 0.12);
+  color: #17834b;
+}
+
+.radios-account-status.is-danger {
+  background: rgba(231, 76, 60, 0.12);
+  color: #c0392b;
+}
+
+.radios-account-form {
+  padding: 22px;
+}
+
+.radios-account-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.radios-account-field {
+  display: grid;
+  gap: 7px;
+}
+
+.radios-account-field.is-wide {
+  grid-column: 1 / -1;
+}
+
+.radios-account-field label {
+  color: var(--account-text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.radios-account-field input,
+.radios-account-field select,
+.radios-account-field textarea {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--account-border);
+  border-radius: 10px;
+  padding: 0 12px;
+  color: var(--account-text);
+  background: #fff;
+}
+
+.radios-account-field textarea {
+  min-height: 110px;
+  padding-top: 12px;
+  resize: vertical;
+}
+
+.radios-account-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.radios-account-button {
+  border: 1px solid var(--account-accent);
+  background: var(--account-accent);
+  color: #fff;
+  padding: 0 18px;
+}
+
+.radios-account-button:hover {
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.radios-account-button.is-secondary,
+.radios-account-link {
+  border: 1px solid var(--account-border);
+  background: #fff;
+  color: var(--account-text);
+  padding: 0 14px;
+}
+
+.radios-account-button.is-danger {
+  border-color: #dc2626;
+  background: #dc2626;
+}
+
+.radios-account-message {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 122, 0, 0.1);
+  color: #9a4a00;
+  font-size: 13px;
+}
+
+.radios-account-danger-zone {
+  border-color: rgba(220, 38, 38, 0.24);
+  background: #fffafa;
+}
+
+.radios-account-danger-zone h2 {
+  color: #991b1b;
+}
+
+.radios-account-danger-zone p {
+  margin: 0;
+  color: #7f1d1d;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.radios-account-empty,
+.radios-account-loading {
+  padding: 32px 18px;
+  border: 1px dashed var(--account-border);
+  border-radius: 16px;
+  text-align: center;
+  color: var(--account-muted);
+  background: #fff;
+}
+
+.radios-account-mobile-tabs {
+  display: none;
+  gap: 8px;
+  overflow-x: auto;
+  margin-bottom: 16px;
+  padding-bottom: 4px;
+}
+
+.radios-account-mobile-tabs a {
+  flex: 0 0 auto;
+  min-height: 40px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--account-border);
+  color: var(--account-text);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.radios-account-mobile-tabs a.is-active {
+  border-color: var(--account-accent);
+  background: rgba(255, 122, 0, 0.1);
+  color: var(--account-accent);
+}
+
+@media (max-width: 900px) {
+  .radios-account-shell {
+    display: block;
+  }
+
+  .radios-account-sidebar {
+    display: none;
+  }
+
+  .radios-account-mobile-tabs {
+    display: flex;
+  }
+
+  .radios-account-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .radios-account-area {
+    padding: 28px 0 60px;
+  }
+
+  .radios-account-shell {
+    width: min(100% - 22px, 1180px);
+  }
+
+  .radios-account-header h1 {
+    font-size: 24px;
+  }
+
+  .radios-account-panel,
+  .radios-account-form,
+  .radios-account-card {
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+  .radios-account-fields {
+    grid-template-columns: 1fr;
+  }
+}
