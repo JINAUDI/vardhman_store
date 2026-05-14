@@ -29,7 +29,7 @@ export async function getCategories() {
     .order("name", { ascending: true });
 
   if (error) throw error;
-  return (data || []) as CategoryRow[];
+  return (data || []) as unknown as CategoryRow[];
 }
 
 export async function updateCategorySeo(categoryId: string, payload: Partial<CategorySeoPayload>) {

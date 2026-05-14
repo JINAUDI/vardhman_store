@@ -64,7 +64,7 @@ export async function getInventoryProducts() {
     .order("updated_at", { ascending: false });
 
   if (error) throw error;
-  return (data || []) as InventoryProduct[];
+  return (data || []) as unknown as InventoryProduct[];
 }
 
 export async function getInventoryLogs(productId?: string) {
@@ -82,7 +82,7 @@ export async function getInventoryLogs(productId?: string) {
 
   const { data, error } = await query;
   if (error) throw error;
-  return (data || []) as InventoryLog[];
+  return (data || []) as unknown as InventoryLog[];
 }
 
 export async function adjustProductStock(productId: string, quantityChange: number, note: string) {

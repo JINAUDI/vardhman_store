@@ -1,16 +1,35 @@
-# Dashcode Integration Example
+# Vardhman Store Admin Panel
 
-This folder contains example Next.js integration files for a Dashcode admin dashboard connected to the shared Radios API.
+This folder is a standalone Next.js admin dashboard for the Vardhman Store ecommerce project. It can be deployed directly to Vercel from the same GitHub repository as the storefront.
+
+## Vercel deployment
+
+Create a new Vercel project from `JINAUDI/vardhman_store` and use these settings:
+
+- Root Directory: `dashcode-integration-example`
+- Framework Preset: Next.js
+- Build Command: `npm run build`
+- Install Command: `npm install`
+- Output Directory: leave blank
+
+Recommended project/domain split:
+
+- Storefront project root: `Radios`
+- Admin project root: `dashcode-integration-example`
+- Storefront domain: `vardhmanstore.com`
+- Admin domain: `admin.vardhmanstore.com`
 
 ## Expected env
 
 ```env
-NEXT_PUBLIC_API_BASE_URL=http://localhost:5000/api
+NEXT_PUBLIC_API_BASE_URL=https://your-api-host.example.com/api
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+NEXT_PUBLIC_RADIOS_STOREFRONT_URL=https://your-storefront-domain.example.com
+NEXT_PUBLIC_STOREFRONT_PRODUCT_ROUTE=shop-single.html
 ```
 
-The admin auth files use `@supabase/supabase-js`, which should be installed in the Dashcode app.
+`NEXT_PUBLIC_API_BASE_URL` must point to the deployed Express/API service. The storefront URL is used by admin actions such as "view product on store".
 
 ## What is included
 
@@ -36,7 +55,22 @@ The admin auth files use `@supabase/supabase-js`, which should be installed in t
 - Discounts and promotions page at `/promotions` for coupon codes, automatic offers, category/product rules, first-order offers, combo offers, free shipping, usage limits, date windows, active toggles, and redemption history
 - Business analytics page at `/analytics` and `/en/ecommerce/backend/analytics` for revenue, orders, conversion funnel, abandoned carts, retention, wishlist, and sales trend reporting from Supabase
 
-Copy the files into your Dashcode app and adapt the page layout to the template components already used there.
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## Production build check
+
+```bash
+npm run build
+```
+
+The build should complete before connecting or redeploying the Vercel admin project.
 
 ## Admin auth setup
 

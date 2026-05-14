@@ -94,9 +94,9 @@ export async function getPromotionDashboardData(): Promise<PromotionDashboardDat
   if (productsResult.error) throw productsResult.error;
 
   return {
-    promotions: (promotionsResult.data || []) as PromotionDiscount[],
-    redemptions: (redemptionsResult.data || []) as PromotionRedemption[],
-    products: (productsResult.data || []) as PromotionProductOption[]
+    promotions: (promotionsResult.data || []) as unknown as PromotionDiscount[],
+    redemptions: (redemptionsResult.data || []) as unknown as PromotionRedemption[],
+    products: (productsResult.data || []) as unknown as PromotionProductOption[]
   };
 }
 

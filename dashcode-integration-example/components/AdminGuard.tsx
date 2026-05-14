@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { AdminUser, getCurrentAdmin, getSupabaseBrowserClient, roleCan } from "../lib/admin-auth";
 
 type AdminGuardProps = {
@@ -26,7 +26,6 @@ export default function AdminGuard({ children, permission = "view_orders" }: Adm
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const router = useRouter();
 
   useEffect(() => {
@@ -44,7 +43,8 @@ export default function AdminGuard({ children, permission = "view_orders" }: Adm
       })
       .catch((guardError) => {
         if (cancelled) return;
-        const redirectPath = pathname + (searchParams.toString() ? `?${searchParams.toString()}` : "");
+        const currentSearch = typeof window === "undefined" ? "" : window.location.search;
+        const redirectPath = `${pathname}${currentSearch}`;
         if (guardError.message === "NOT_ADMIN") {
           router.replace("/auth/unauthorized");
           return;
@@ -55,7 +55,7 @@ export default function AdminGuard({ children, permission = "view_orders" }: Adm
     return () => {
       cancelled = true;
     };
-  }, [pathname, permission, router, searchParams]);
+  }, [pathname, permission, router]);
 
   async function handleLogout() {
     try {
@@ -67,11 +67,11 @@ export default function AdminGuard({ children, permission = "view_orders" }: Adm
   }
 
   if (loading || !admin) {
-    return <div>Checking dashboard access...</div>;
+    return <main className="admin-page">Checking dashboard access...</main>;
   }
 
   return (
-    <div>
+    <main className="admin-shell">
       <div style={{ display: "flex", justifyContent: "space-between", gap: 16, marginBottom: 24 }}>
         <div>
           <strong>{admin.email}</strong>
@@ -100,6 +100,6 @@ export default function AdminGuard({ children, permission = "view_orders" }: Adm
         ))}
       </nav>
       {children}
-    </div>
+    </main>
   );
 }

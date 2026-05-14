@@ -103,7 +103,7 @@ async function selectRows<T>(table: string, selectClauses: string[], options: Se
     let query = supabase.from(table).select(clause).order("created_at", { ascending: false }).limit(options.limit || 5000);
     query = applyRange(query, options.range, options.lteEndOnly);
     const { data, error } = await query;
-    if (!error) return (data || []) as T[];
+    if (!error) return (data || []) as unknown as T[];
     lastError = error;
   }
 
@@ -132,7 +132,7 @@ async function selectOrderItems(orderIds: string[]) {
       .in("order_id", orderIds.slice(0, 1000))
       .limit(10000);
 
-    if (!error) return (data || []) as AnalyticsOrderItem[];
+    if (!error) return (data || []) as unknown as AnalyticsOrderItem[];
     lastError = error;
   }
 

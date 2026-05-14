@@ -1,27 +1,38 @@
 "use client";
 
 import { FormEvent, useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { getCurrentAdmin, getSupabaseBrowserClient } from "../../../lib/admin-auth";
+
+function safeRedirectPath(value: string | null) {
+  if (!value || !value.startsWith("/") || value.startsWith("//")) {
+    return "/products";
+  }
+
+  return value;
+}
 
 export default function AdminLoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
+  const [redirect, setRedirect] = useState("/products");
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const redirect = searchParams.get("redirect") || "/products";
 
   useEffect(() => {
+    const redirectParam = new URLSearchParams(window.location.search).get("redirect");
+    const nextRedirect = safeRedirectPath(redirectParam);
+    setRedirect(nextRedirect);
+
     getCurrentAdmin()
       .then(() => {
-        router.replace(redirect);
+        router.replace(nextRedirect);
       })
       .catch(() => {
         // Stay on login.
       });
-  }, [redirect, router]);
+  }, [router]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -55,35 +66,38 @@ export default function AdminLoginPage() {
   }
 
   return (
-    <main style={{ maxWidth: 420, margin: "80px auto", padding: 24 }}>
-      <h1>Dashcode Login</h1>
-      <p>Sign in with an authorized admin account.</p>
-      <form onSubmit={handleSubmit} style={{ display: "grid", gap: 14 }}>
-        {message ? <div>{message}</div> : null}
-        <label>
-          Email
-          <input
-            type="email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            required
-            style={{ display: "block", width: "100%", marginTop: 6 }}
-          />
-        </label>
-        <label>
-          Password
-          <input
-            type="password"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-            required
-            style={{ display: "block", width: "100%", marginTop: 6 }}
-          />
-        </label>
-        <button type="submit" disabled={loading}>
-          {loading ? "Signing in..." : "Sign In"}
-        </button>
-      </form>
+    <main className="auth-shell">
+      <section className="auth-card">
+        <p className="eyebrow">Vardhman Store</p>
+        <h1>Admin Login</h1>
+        <p>Sign in with an authorized admin account.</p>
+        <form onSubmit={handleSubmit} style={{ display: "grid", gap: 14 }}>
+          {message ? <div style={{ color: "#b42318" }}>{message}</div> : null}
+          <label>
+            Email
+            <input
+              type="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              required
+              style={{ display: "block", width: "100%", marginTop: 6 }}
+            />
+          </label>
+          <label>
+            Password
+            <input
+              type="password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              required
+              style={{ display: "block", width: "100%", marginTop: 6 }}
+            />
+          </label>
+          <button type="submit" disabled={loading}>
+            {loading ? "Signing in..." : "Sign In"}
+          </button>
+        </form>
+      </section>
     </main>
   );
 }

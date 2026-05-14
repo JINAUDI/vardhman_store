@@ -46,7 +46,7 @@ async function getSearchEvents(selectClause: string) {
     .limit(500);
 
   if (error) throw error;
-  return (data || []) as SearchEventRow[];
+  return (data || []) as unknown as SearchEventRow[];
 }
 
 export async function getSearchAnalytics() {
@@ -83,7 +83,7 @@ export async function getSearchAnalytics() {
 
     if (!analyticsResult.error) {
       analyticsEventsAvailable = true;
-      analyticsEvents = (analyticsResult.data || []) as AnalyticsEventRow[];
+      analyticsEvents = (analyticsResult.data || []) as unknown as AnalyticsEventRow[];
     }
   } catch {
     analyticsEvents = [];
@@ -91,7 +91,7 @@ export async function getSearchAnalytics() {
 
   return {
     searchEvents,
-    products: (productsResult.data || []) as ProductSearchKeywordsRow[],
+    products: (productsResult.data || []) as unknown as ProductSearchKeywordsRow[],
     analyticsEvents,
     analyticsEventsAvailable
   };

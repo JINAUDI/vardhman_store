@@ -64,7 +64,7 @@ async function getReviewRows(selectClause: string) {
     .order("created_at", { ascending: false });
 
   if (error) throw error;
-  return ((data || []) as ReviewRow[]).map(normalizeReview);
+  return ((data || []) as unknown as ReviewRow[]).map(normalizeReview);
 }
 
 export async function getReviews() {
@@ -106,7 +106,7 @@ export async function updateReviewModeration(
     .single();
 
   if (error) throw error;
-  return normalizeReview(data as ReviewRow);
+  return normalizeReview(data as unknown as ReviewRow);
 }
 
 export async function deleteReview(reviewId: string) {
