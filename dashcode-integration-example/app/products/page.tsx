@@ -12,6 +12,7 @@ export default function ProductsPage() {
   const [loading, setLoading] = useState(true);
   const [uploadingKey, setUploadingKey] = useState("");
   const [uploadError, setUploadError] = useState("");
+  const [loadError, setLoadError] = useState("");
   const [imagePreviewById, setImagePreviewById] = useState<Record<string, string>>({});
   const [stockAdjustments, setStockAdjustments] = useState<Record<string, string>>({});
   const storeBaseUrl =
@@ -350,6 +351,7 @@ export default function ProductsPage() {
 
   async function loadProducts() {
     setLoading(true);
+    setLoadError("");
     try {
       const [apiResult, inventoryResult] = await Promise.allSettled([
         api.getProducts("?includeHidden=true&limit=50"),
@@ -364,6 +366,9 @@ export default function ProductsPage() {
       }
 
       setProducts(apiItems.length ? mergeInventory(apiItems, inventoryItems) : inventoryItems.map(inventoryToProduct));
+    } catch (error) {
+      setLoadError(error instanceof Error ? error.message : "Unable to load products.");
+      setProducts([]);
     } finally {
       setLoading(false);
     }
@@ -610,10 +615,6 @@ export default function ProductsPage() {
     });
   }
 
-  if (loading) {
-    return <div>Loading products...</div>;
-  }
-
   return (
     <AdminGuard permission="manage_catalog">
       <h1>Products</h1>
@@ -622,7 +623,13 @@ export default function ProductsPage() {
           {uploadError}
         </p>
       ) : null}
-      <table>
+      {loadError ? (
+        <p role="alert" style={{ color: "#b42318", marginBottom: 12 }}>
+          {loadError}
+        </p>
+      ) : null}
+      {loading ? <p>Loading products...</p> : null}
+      {!loading && !loadError ? <table>
         <thead>
           <tr>
             <th>Image</th>
@@ -988,7 +995,7 @@ export default function ProductsPage() {
             );
           })}
         </tbody>
-      </table>
+      </table> : null}
     </AdminGuard>
   );
 }

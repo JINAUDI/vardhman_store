@@ -46,7 +46,10 @@ export default function InventoryPage() {
   }
 
   useEffect(() => {
-    loadInventory();
+    loadInventory().catch((error) => {
+      setMessage(error instanceof Error ? error.message : "Unable to load inventory.");
+      setLoading(false);
+    });
   }, []);
 
   const visibleProducts = useMemo(() => {

@@ -1,6 +1,8 @@
 "use client";
 
-import { ReactNode, useEffect, useState } from "react";
+import Link from "next/link";
+import type { ReactNode } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { AdminUser, getCurrentAdmin, getSupabaseBrowserClient, roleCan } from "../lib/admin-auth";
 
@@ -10,16 +12,21 @@ type AdminGuardProps = {
 };
 
 const ecommerceLinks = [
-  { href: "/analytics", label: "Analytics" },
-  { href: "/products", label: "Products" },
-  { href: "/categories", label: "Categories" },
-  { href: "/orders", label: "Orders" },
-  { href: "/inventory", label: "Inventory" },
-  { href: "/promotions", label: "Promotions" },
-  { href: "/reviews", label: "Reviews" },
-  { href: "/wishlist", label: "Wishlist" },
-  { href: "/search-analytics", label: "Search" }
+  { slug: "analytics", href: "/analytics", label: "Analytics", icon: "A" },
+  { slug: "products", href: "/products", label: "Products", icon: "P" },
+  { slug: "categories", href: "/categories", label: "Categories", icon: "C" },
+  { slug: "orders", href: "/orders", label: "Orders", icon: "O" },
+  { slug: "inventory", href: "/inventory", label: "Inventory", icon: "I" },
+  { slug: "promotions", href: "/promotions", label: "Promotions", icon: "%" },
+  { slug: "reviews", href: "/reviews", label: "Reviews", icon: "R" },
+  { slug: "wishlist", href: "/wishlist", label: "Wishlist", icon: "W" },
+  { slug: "search-analytics", href: "/search-analytics", label: "Search", icon: "S" }
 ];
+
+function dashboardPrefix(pathname: string) {
+  const match = pathname.match(/^\/([^/]+)\/ecommerce\/backend(?:\/|$)/);
+  return match ? `/${match[1]}/ecommerce/backend` : "";
+}
 
 export default function AdminGuard({ children, permission = "view_orders" }: AdminGuardProps) {
   const [admin, setAdmin] = useState<AdminUser | null>(null);
@@ -27,6 +34,11 @@ export default function AdminGuard({ children, permission = "view_orders" }: Adm
   const [error, setError] = useState("");
   const pathname = usePathname();
   const router = useRouter();
+  const prefix = useMemo(() => dashboardPrefix(pathname), [pathname]);
+  const activeLink = ecommerceLinks.find((link) => {
+    const href = prefix ? `${prefix}/${link.slug}` : link.href;
+    return pathname === href || pathname === link.href;
+  });
 
   useEffect(() => {
     let cancelled = false;
@@ -67,39 +79,65 @@ export default function AdminGuard({ children, permission = "view_orders" }: Adm
   }
 
   if (loading || !admin) {
-    return <main className="admin-page">Checking dashboard access...</main>;
+    return (
+      <main className="dashcode-loading">
+        <div className="dashcode-loader-card">
+          <span className="dashcode-brand-mark">D</span>
+          <strong>Checking dashboard access...</strong>
+        </div>
+      </main>
+    );
   }
 
   return (
-    <main className="admin-shell">
-      <div style={{ display: "flex", justifyContent: "space-between", gap: 16, marginBottom: 24 }}>
-        <div>
-          <strong>{admin.email}</strong>
-          <span style={{ marginLeft: 8, textTransform: "capitalize" }}>{admin.role}</span>
-        </div>
-        <button type="button" onClick={handleLogout}>
-          Logout
-        </button>
-      </div>
-      {error ? <div>{error}</div> : null}
-      <nav aria-label="Ecommerce dashboard" style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 24 }}>
-        {ecommerceLinks.map((link) => (
-          <a
-            key={link.href}
-            href={link.href}
-            style={{
-              border: pathname === link.href ? "1px solid #ff7a00" : "1px solid #d0d5dd",
-              borderRadius: 6,
-              color: pathname === link.href ? "#c85f00" : "#344054",
-              padding: "8px 10px",
-              textDecoration: "none"
-            }}
-          >
-            {link.label}
-          </a>
-        ))}
-      </nav>
-      {children}
+    <main className="dashcode-layout">
+      <aside className="dashcode-sidebar" aria-label="Dashcode admin navigation">
+        <Link className="dashcode-brand" href={prefix ? `${prefix}/analytics` : "/analytics"}>
+          <span className="dashcode-brand-mark">D</span>
+          <span>
+            <strong>Dashcode</strong>
+            <small>Vardhman admin</small>
+          </span>
+        </Link>
+        <nav className="dashcode-nav" aria-label="Ecommerce dashboard">
+          {ecommerceLinks.map((link) => {
+            const href = prefix ? `${prefix}/${link.slug}` : link.href;
+            const isActive = activeLink?.slug === link.slug;
+            return (
+              <Link
+                key={link.slug}
+                className={isActive ? "dashcode-nav-link is-active" : "dashcode-nav-link"}
+                href={href}
+                aria-current={isActive ? "page" : undefined}
+              >
+                <span className="dashcode-nav-icon" aria-hidden="true">
+                  {link.icon}
+                </span>
+                <span>{link.label}</span>
+              </Link>
+            );
+          })}
+        </nav>
+      </aside>
+      <section className="dashcode-main">
+        <header className="dashcode-topbar">
+          <div>
+            <p className="eyebrow">Admin Panel</p>
+            <strong className="dashcode-page-title">{activeLink?.label || "Dashboard"}</strong>
+          </div>
+          <div className="dashcode-userbar">
+            <div className="dashcode-user">
+              <strong>{admin.email}</strong>
+              <span>{admin.role}</span>
+            </div>
+            <button className="dashcode-logout" type="button" onClick={handleLogout}>
+              Logout
+            </button>
+          </div>
+        </header>
+        {error ? <div className="dashcode-alert">{error}</div> : null}
+        <div className="dashcode-content">{children}</div>
+      </section>
     </main>
   );
 }

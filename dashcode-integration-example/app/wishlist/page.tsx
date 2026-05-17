@@ -31,18 +31,14 @@ export default function WishlistPage() {
     return sessions.size;
   }, [analytics]);
 
-  if (loading) {
-    return <div>Loading wishlist analytics...</div>;
-  }
-
-  if (error) {
-    return <div>{error}</div>;
-  }
-
   return (
     <AdminGuard permission="view_orders">
       <h1>Wishlist Insights</h1>
+      {loading ? <p>Loading wishlist analytics...</p> : null}
+      {error ? <p role="alert" style={{ color: "#b42318" }}>{error}</p> : null}
 
+      {!loading && !error ? (
+        <>
       <section style={{ display: "flex", gap: 16, marginBottom: 24, flexWrap: "wrap" }}>
         <div>
           <strong>Total wishlist saves</strong>
@@ -97,6 +93,8 @@ export default function WishlistPage() {
           ))}
         </tbody>
       </table>
+        </>
+      ) : null}
     </AdminGuard>
   );
 }

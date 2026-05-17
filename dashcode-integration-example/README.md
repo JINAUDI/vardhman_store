@@ -63,6 +63,12 @@ npm run dev
 
 Open `http://localhost:3000`.
 
+The admin root redirects to the Dashcode-style backend route:
+
+```text
+http://localhost:3000/en/ecommerce/backend/products
+```
+
 ## Production build check
 
 ```bash

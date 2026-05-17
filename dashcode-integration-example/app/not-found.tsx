@@ -7,7 +7,7 @@ export default function NotFound() {
         <p className="eyebrow">404</p>
         <h1>Admin page not found</h1>
         <p>The dashboard route you opened does not exist.</p>
-        <Link className="button-link" href="/products">
+        <Link className="button-link" href="/en/ecommerce/backend/products">
           Back to products
         </Link>
       </section>

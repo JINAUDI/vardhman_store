@@ -4,9 +4,11 @@ import { FormEvent, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { getCurrentAdmin, getSupabaseBrowserClient } from "../../../lib/admin-auth";
 
+const defaultDashboardPath = "/en/ecommerce/backend/products";
+
 function safeRedirectPath(value: string | null) {
   if (!value || !value.startsWith("/") || value.startsWith("//")) {
-    return "/products";
+    return defaultDashboardPath;
   }
 
   return value;
@@ -17,7 +19,7 @@ export default function AdminLoginPage() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
-  const [redirect, setRedirect] = useState("/products");
+  const [redirect, setRedirect] = useState(defaultDashboardPath);
   const router = useRouter();
 
   useEffect(() => {
@@ -68,7 +70,7 @@ export default function AdminLoginPage() {
   return (
     <main className="auth-shell">
       <section className="auth-card">
-        <p className="eyebrow">Vardhman Store</p>
+        <p className="eyebrow">Dashcode Admin</p>
         <h1>Admin Login</h1>
         <p>Sign in with an authorized admin account.</p>
         <form onSubmit={handleSubmit} style={{ display: "grid", gap: 14 }}>

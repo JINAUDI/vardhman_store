@@ -26,7 +26,10 @@ export default function OrdersPage() {
   }
 
   useEffect(() => {
-    loadOrders(1);
+    loadOrders(1).catch((error) => {
+      setMessage(error instanceof Error ? error.message : "Unable to load orders.");
+      setLoading(false);
+    });
   }, []);
 
   function getOrderId(order: Order) {
