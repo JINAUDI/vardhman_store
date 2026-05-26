@@ -3,6 +3,16 @@ import {NextRequest, NextResponse} from 'next/server';
 import {locales} from '@/config';
 
 export default async function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  if (
+    pathname.startsWith("/auth") ||
+    pathname.startsWith("/ecommerce")
+  ) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/en${pathname}`;
+    return NextResponse.redirect(url);
+  }
   
  
 
@@ -28,5 +38,5 @@ export default async function middleware(request: NextRequest) {
  
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/', '/(en)/:path*']
+  matcher: ['/', '/(en)/:path*', '/auth/:path*', '/ecommerce/:path*']
 };
