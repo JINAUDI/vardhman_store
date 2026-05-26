@@ -1,0 +1,2060 @@
+[
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1776857544140,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1776857544147,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1776857646902,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1776857646906,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_sort_applied",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1776857675110,
+    "metadata": {
+      "sortBy": "price_asc",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_sort_applied",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1776857679673,
+    "metadata": {
+      "sortBy": "newest",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "low_stock_filter_used",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1776857681336,
+    "metadata": {
+      "enabled": true,
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "low_stock_filter_used",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1776857684026,
+    "metadata": {
+      "enabled": false,
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "low_stock_filter_used",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1776857807888,
+    "metadata": {
+      "enabled": true,
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "low_stock_filter_used",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1776857812703,
+    "metadata": {
+      "enabled": false,
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930177774,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930177778,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930215203,
+    "metadata": {
+      "productId": "seed_prod_001",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_edit_open",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930218330,
+    "metadata": {
+      "productId": "seed_prod_001",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930234014,
+    "metadata": {
+      "productId": "seed_prod_001",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_deleted",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930258914,
+    "metadata": {
+      "productId": "seed_prod_001",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930296179,
+    "metadata": {
+      "productId": "seed_prod_003",
+      "userId": "user_001",
+      "visible": false
+    }
+  },
+  {
+    "event": "low_stock_filter_used",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930321643,
+    "metadata": {
+      "enabled": true,
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "low_stock_filter_used",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930323169,
+    "metadata": {
+      "enabled": false,
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "low_stock_filter_used",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930324158,
+    "metadata": {
+      "enabled": true,
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "low_stock_filter_used",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930324910,
+    "metadata": {
+      "enabled": false,
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_sort_applied",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930329399,
+    "metadata": {
+      "sortBy": "price_desc",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_sort_applied",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930333354,
+    "metadata": {
+      "sortBy": "price_asc",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_sort_applied",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776930337665,
+    "metadata": {
+      "sortBy": "stock_asc",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776931849128,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776931852463,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776932038366,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776932705561,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776932705572,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776932713853,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776932713856,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776933926197,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776933926200,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776934020522,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776934618175,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776934618177,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "add_product_clicked",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776934627719,
+    "metadata": {
+      "source": "products_header",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776934630820,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776934630822,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "add_product_clicked",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776934764205,
+    "metadata": {
+      "source": "products_header",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776934986925,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776934986927,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776938734028,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776938858788,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776938858799,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_edit_open",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776938883883,
+    "metadata": {
+      "productId": "seed_prod_003",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1776930177774_42tpg4rc",
+    "timestamp": 1776938897269,
+    "metadata": {
+      "productId": "seed_prod_003",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777022051996,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777022052000,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777287303106,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777287303109,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777287331967,
+    "metadata": {
+      "productId": "seed_prod_002",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777287419348,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777287419351,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777287434832,
+    "metadata": {
+      "productId": "seed_prod_004",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777291516341,
+    "metadata": {
+      "productId": "prod_1777287899537_2_hlksb",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777291956983,
+    "metadata": {
+      "productId": "prod_1777287899537_2_hlksb",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777376170901,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777376170903,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777376184877,
+    "metadata": {
+      "productId": "433bd191-ee62-497c-afe7-9da1a4e5deb9",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777376897143,
+    "metadata": {
+      "productId": "433bd191-ee62-497c-afe7-9da1a4e5deb9",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777376917733,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777376917734,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777376928174,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777376928185,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777377157706,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777377157711,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777377163190,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777377246258,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777377246260,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777377257912,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777379052363,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777379052366,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777379072887,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": false
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777379082959,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1776857544140_pli8b0s6",
+    "timestamp": 1777379722239,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447091913,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447091918,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447100511,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447308655,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447333892,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447334385,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447355384,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447360214,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447366787,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447372670,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447388846,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447398670,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447404245,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447701712,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447708988,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777447779341,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777450190880,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777450833490,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777450834932,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777450933466,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777450933468,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777450938288,
+    "metadata": {
+      "productId": "443b6160-7648-47d6-bc33-39b91898e8b4",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777451201004,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777451378509,
+    "metadata": {
+      "productId": "443b6160-7648-47d6-bc33-39b91898e8b4",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777452444963,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777452444991,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777452709303,
+    "metadata": {
+      "productId": "443b6160-7648-47d6-bc33-39b91898e8b4",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777459068505,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777459068514,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777459145349,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777459145350,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777459152571,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777459162238,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_edit_open",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777459171545,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777459187585,
+    "metadata": {
+      "productId": "4bfed8cc-d89d-4cc9-a5b2-2ffd14efa714",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777544739479,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777544739482,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777547225177,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777547225180,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777547468403,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777547468408,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777547698780,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777547698784,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777620905366,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777620905371,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777622823312,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777622823315,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777627343313,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777627343318,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777627675492,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777627675495,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777628652369,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777628652381,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777707184405,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777707184410,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_deleted",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777707213754,
+    "metadata": {
+      "productId": "7f586855-029b-4e70-bb86-88d82fa3387b",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "add_product_clicked",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777707215838,
+    "metadata": {
+      "source": "products_header",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "add_product_clicked",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777707217563,
+    "metadata": {
+      "source": "products_header",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "add_product_clicked",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777707218608,
+    "metadata": {
+      "source": "products_header",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "add_product_clicked",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777707218826,
+    "metadata": {
+      "source": "products_header",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "add_product_clicked",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777707220949,
+    "metadata": {
+      "source": "products_header",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777742797216,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777742797219,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777746934882,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1777746934893,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778141596222,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778141596241,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778147846281,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778147846292,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778148167987,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778148167999,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778150676552,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778150676579,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778150742788,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778150742812,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778150938836,
+    "metadata": {
+      "productId": "5d5e6448-65fc-4995-b2a0-d37a740056fd",
+      "productSlug": "headphones",
+      "storeUrl": "http://localhost:8080/shop-single.html?id=5d5e6448-65fc-4995-b2a0-d37a740056fd",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778151107589,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778151107607,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778151129560,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778151129576,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778151421164,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778151421221,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778151475618,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778151475640,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778151548205,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778150676552_l1oga19h",
+    "timestamp": 1778151548228,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778154604870,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778154604891,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778226501405,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778226501417,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778234807822,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778234807834,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778234824576,
+    "metadata": {
+      "productId": "795f51fe-2b64-40cc-b3d9-3cde161dbdd1",
+      "userId": "user_001",
+      "visible": false
+    }
+  },
+  {
+    "event": "product_view_store",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235281524,
+    "metadata": {
+      "productId": "795f51fe-2b64-40cc-b3d9-3cde161dbdd1",
+      "productSlug": "health-supplement",
+      "storeUrl": "http://localhost:8080/shop-single.html?slug=health-supplement",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235293173,
+    "metadata": {
+      "productId": "795f51fe-2b64-40cc-b3d9-3cde161dbdd1",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235298099,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235298107,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235305075,
+    "metadata": {
+      "productId": "795f51fe-2b64-40cc-b3d9-3cde161dbdd1",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235310586,
+    "metadata": {
+      "productId": "795f51fe-2b64-40cc-b3d9-3cde161dbdd1",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235350566,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235350574,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235357289,
+    "metadata": {
+      "productId": "795f51fe-2b64-40cc-b3d9-3cde161dbdd1",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235387044,
+    "metadata": {
+      "productId": "795f51fe-2b64-40cc-b3d9-3cde161dbdd1",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235392634,
+    "metadata": {
+      "productId": "795f51fe-2b64-40cc-b3d9-3cde161dbdd1",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235735706,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235775459,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235905486,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235905495,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "product_visibility_toggled",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778235916313,
+    "metadata": {
+      "productId": "795f51fe-2b64-40cc-b3d9-3cde161dbdd1",
+      "userId": "user_001",
+      "visible": true
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778403920301,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778403920315,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778407368471,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778407368489,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778407862492,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778407862505,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778415469167_n63qrfs0",
+    "timestamp": 1778415469167,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1778415469167_n63qrfs0",
+    "timestamp": 1778415469181,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778472117757,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778472117771,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778489433794,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778489433810,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778499640059,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778499640072,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778579034921,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1778579034934,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1779019503674,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  },
+  {
+    "event": "page_view",
+    "userId": "user_001",
+    "sessionId": "sess_1777022051996_falgtel7",
+    "timestamp": 1779019503690,
+    "metadata": {
+      "page": "products_admin",
+      "userId": "user_001"
+    }
+  }
+]

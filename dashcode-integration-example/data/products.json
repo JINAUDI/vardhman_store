@@ -1,0 +1,657 @@
+[
+  {
+    "id": "seed_prod_002",
+    "name": "Fast Charging Power Bank",
+    "slug": "fast-charging-power-bank",
+    "sku": "RAD-102",
+    "description": "Fast Charging Power Bank designed for daily ecommerce demand and admin workflow testing.",
+    "price": 28.74,
+    "images": [
+      "/images/all-img/p-2.png",
+      "/images/all-img/p-3.png"
+    ],
+    "category": "Mobile Accessories",
+    "tags": [
+      "mobile accessories",
+      "new"
+    ],
+    "variants": [],
+    "stock": 9,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": true,
+    "visible": true,
+    "metaTitle": "Fast Charging Power Bank",
+    "metaDescription": "Fast Charging Power Bank available in the Radios admin catalog.",
+    "createdAt": "2026-04-21T11:32:25.027Z",
+    "updatedAt": "2026-04-21T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_003",
+    "name": "Kids Feeding Bottle Set",
+    "slug": "kids-feeding-bottle-set",
+    "sku": "RAD-103",
+    "description": "Kids Feeding Bottle Set designed for daily ecommerce demand and admin workflow testing.",
+    "price": 32.49,
+    "compareAtPrice": 37.36,
+    "images": [
+      "/images/all-img/p-3.png",
+      "/images/all-img/p-4.png"
+    ],
+    "category": "Health Supplements",
+    "tags": [
+      "health supplements",
+      "featured"
+    ],
+    "variants": [],
+    "stock": 18,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": true,
+    "visible": false,
+    "metaTitle": "Kids Feeding Bottle Set",
+    "metaDescription": "Kids Feeding Bottle Set available in the Radios admin catalog.",
+    "createdAt": "2026-04-20T11:32:25.027Z",
+    "updatedAt": "2026-04-23T10:08:17.255Z",
+    "isVisible": false
+  },
+  {
+    "id": "seed_prod_004",
+    "name": "Organic Vitamin C Tablets",
+    "slug": "organic-vitamin-c-tablets",
+    "sku": "RAD-104",
+    "description": "Organic Vitamin C Tablets designed for daily ecommerce demand and admin workflow testing.",
+    "price": 36.24,
+    "images": [
+      "/images/all-img/p-4.png",
+      "/images/all-img/p-5.png"
+    ],
+    "category": "Hygiene & Personal Care",
+    "tags": [
+      "hygiene & personal care",
+      "new"
+    ],
+    "variants": [],
+    "stock": 27,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": true,
+    "visible": true,
+    "metaTitle": "Organic Vitamin C Tablets",
+    "metaDescription": "Organic Vitamin C Tablets available in the Radios admin catalog.",
+    "createdAt": "2026-04-19T11:32:25.027Z",
+    "updatedAt": "2026-04-19T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_005",
+    "name": "Wireless Neckband Earbuds",
+    "slug": "wireless-neckband-earbuds",
+    "sku": "RAD-105",
+    "description": "Wireless Neckband Earbuds designed for daily ecommerce demand and admin workflow testing.",
+    "price": 39.99,
+    "compareAtPrice": 45.99,
+    "images": [
+      "/images/all-img/p-5.png",
+      "/images/all-img/p-6.png"
+    ],
+    "category": "Baby Products",
+    "tags": [
+      "baby products",
+      "featured"
+    ],
+    "variants": [],
+    "stock": 36,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Wireless Neckband Earbuds",
+    "metaDescription": "Wireless Neckband Earbuds available in the Radios admin catalog.",
+    "createdAt": "2026-04-18T11:32:25.027Z",
+    "updatedAt": "2026-04-18T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_006",
+    "name": "Premium Toothbrush Kit",
+    "slug": "premium-toothbrush-kit",
+    "sku": "RAD-106",
+    "description": "Premium Toothbrush Kit designed for daily ecommerce demand and admin workflow testing.",
+    "price": 43.74,
+    "images": [
+      "/images/all-img/p-6.png",
+      "/images/all-img/p-1.png"
+    ],
+    "category": "Household Items",
+    "tags": [
+      "household items",
+      "new"
+    ],
+    "variants": [],
+    "stock": 45,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Premium Toothbrush Kit",
+    "metaDescription": "Premium Toothbrush Kit available in the Radios admin catalog.",
+    "createdAt": "2026-04-17T11:32:25.027Z",
+    "updatedAt": "2026-04-17T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_007",
+    "name": "Smart LED Desk Lamp",
+    "slug": "smart-led-desk-lamp",
+    "sku": "RAD-107",
+    "description": "Smart LED Desk Lamp designed for daily ecommerce demand and admin workflow testing.",
+    "price": 47.49,
+    "compareAtPrice": 54.61,
+    "images": [
+      "/images/all-img/p-1.png",
+      "/images/all-img/p-2.png"
+    ],
+    "category": "Electronics",
+    "tags": [
+      "electronics",
+      "featured"
+    ],
+    "variants": [],
+    "stock": 54,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Smart LED Desk Lamp",
+    "metaDescription": "Smart LED Desk Lamp available in the Radios admin catalog.",
+    "createdAt": "2026-04-16T11:32:25.027Z",
+    "updatedAt": "2026-04-16T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_008",
+    "name": "Baby Wipes Value Pack",
+    "slug": "baby-wipes-value-pack",
+    "sku": "RAD-108",
+    "description": "Baby Wipes Value Pack designed for daily ecommerce demand and admin workflow testing.",
+    "price": 51.24,
+    "images": [
+      "/images/all-img/p-2.png",
+      "/images/all-img/p-3.png"
+    ],
+    "category": "Mobile Accessories",
+    "tags": [
+      "mobile accessories",
+      "new"
+    ],
+    "variants": [],
+    "stock": 63,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": false,
+    "metaTitle": "Baby Wipes Value Pack",
+    "metaDescription": "Baby Wipes Value Pack available in the Radios admin catalog.",
+    "createdAt": "2026-04-15T11:32:25.027Z",
+    "updatedAt": "2026-04-15T11:32:25.027Z",
+    "isVisible": false
+  },
+  {
+    "id": "seed_prod_009",
+    "name": "Electrolyte Drink Mix",
+    "slug": "electrolyte-drink-mix",
+    "sku": "RAD-109",
+    "description": "Electrolyte Drink Mix designed for daily ecommerce demand and admin workflow testing.",
+    "price": 54.99,
+    "compareAtPrice": 63.24,
+    "images": [
+      "/images/all-img/p-3.png",
+      "/images/all-img/p-4.png"
+    ],
+    "category": "Health Supplements",
+    "tags": [
+      "health supplements",
+      "featured"
+    ],
+    "variants": [],
+    "stock": 0,
+    "lowStockThreshold": 10,
+    "status": "archived",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Electrolyte Drink Mix",
+    "metaDescription": "Electrolyte Drink Mix available in the Radios admin catalog.",
+    "createdAt": "2026-04-14T11:32:25.027Z",
+    "updatedAt": "2026-04-14T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_010",
+    "name": "USB-C Cable Braided",
+    "slug": "usb-c-cable-braided",
+    "sku": "RAD-110",
+    "description": "USB-C Cable Braided designed for daily ecommerce demand and admin workflow testing.",
+    "price": 58.74,
+    "images": [
+      "/images/all-img/p-4.png",
+      "/images/all-img/p-5.png"
+    ],
+    "category": "Hygiene & Personal Care",
+    "tags": [
+      "hygiene & personal care",
+      "new"
+    ],
+    "variants": [],
+    "stock": 9,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "USB-C Cable Braided",
+    "metaDescription": "USB-C Cable Braided available in the Radios admin catalog.",
+    "createdAt": "2026-04-13T11:32:25.027Z",
+    "updatedAt": "2026-04-13T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_011",
+    "name": "Air Purifier Filter Pack",
+    "slug": "air-purifier-filter-pack",
+    "sku": "RAD-111",
+    "description": "Air Purifier Filter Pack designed for daily ecommerce demand and admin workflow testing.",
+    "price": 62.49,
+    "compareAtPrice": 71.86,
+    "images": [
+      "/images/all-img/p-5.png",
+      "/images/all-img/p-6.png"
+    ],
+    "category": "Baby Products",
+    "tags": [
+      "baby products",
+      "featured"
+    ],
+    "variants": [],
+    "stock": 18,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Air Purifier Filter Pack",
+    "metaDescription": "Air Purifier Filter Pack available in the Radios admin catalog.",
+    "createdAt": "2026-04-12T11:32:25.027Z",
+    "updatedAt": "2026-04-12T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_012",
+    "name": "Moisturizing Hand Wash",
+    "slug": "moisturizing-hand-wash",
+    "sku": "RAD-112",
+    "description": "Moisturizing Hand Wash designed for daily ecommerce demand and admin workflow testing.",
+    "price": 66.24,
+    "images": [
+      "/images/all-img/p-6.png",
+      "/images/all-img/p-1.png"
+    ],
+    "category": "Household Items",
+    "tags": [
+      "household items",
+      "new"
+    ],
+    "variants": [],
+    "stock": 27,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Moisturizing Hand Wash",
+    "metaDescription": "Moisturizing Hand Wash available in the Radios admin catalog.",
+    "createdAt": "2026-04-11T11:32:25.027Z",
+    "updatedAt": "2026-04-11T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_013",
+    "name": "Digital Kitchen Scale",
+    "slug": "digital-kitchen-scale",
+    "sku": "RAD-113",
+    "description": "Digital Kitchen Scale designed for daily ecommerce demand and admin workflow testing.",
+    "price": 69.99,
+    "compareAtPrice": 80.49,
+    "images": [
+      "/images/all-img/p-1.png",
+      "/images/all-img/p-2.png"
+    ],
+    "category": "Electronics",
+    "tags": [
+      "electronics",
+      "featured"
+    ],
+    "variants": [],
+    "stock": 36,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Digital Kitchen Scale",
+    "metaDescription": "Digital Kitchen Scale available in the Radios admin catalog.",
+    "createdAt": "2026-04-10T11:32:25.027Z",
+    "updatedAt": "2026-04-10T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_014",
+    "name": "Portable Phone Stand",
+    "slug": "portable-phone-stand",
+    "sku": "RAD-114",
+    "description": "Portable Phone Stand designed for daily ecommerce demand and admin workflow testing.",
+    "price": 73.74,
+    "images": [
+      "/images/all-img/p-2.png",
+      "/images/all-img/p-3.png"
+    ],
+    "category": "Mobile Accessories",
+    "tags": [
+      "mobile accessories",
+      "new"
+    ],
+    "variants": [],
+    "stock": 45,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Portable Phone Stand",
+    "metaDescription": "Portable Phone Stand available in the Radios admin catalog.",
+    "createdAt": "2026-04-09T11:32:25.027Z",
+    "updatedAt": "2026-04-09T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_015",
+    "name": "Protein Shake Starter Pack",
+    "slug": "protein-shake-starter-pack",
+    "sku": "RAD-115",
+    "description": "Protein Shake Starter Pack designed for daily ecommerce demand and admin workflow testing.",
+    "price": 77.49,
+    "compareAtPrice": 89.11,
+    "images": [
+      "/images/all-img/p-3.png",
+      "/images/all-img/p-4.png"
+    ],
+    "category": "Health Supplements",
+    "tags": [
+      "health supplements",
+      "featured"
+    ],
+    "variants": [],
+    "stock": 54,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": false,
+    "metaTitle": "Protein Shake Starter Pack",
+    "metaDescription": "Protein Shake Starter Pack available in the Radios admin catalog.",
+    "createdAt": "2026-04-08T11:32:25.027Z",
+    "updatedAt": "2026-04-08T11:32:25.027Z",
+    "isVisible": false
+  },
+  {
+    "id": "seed_prod_016",
+    "name": "Bottle Sterilizer Box",
+    "slug": "bottle-sterilizer-box",
+    "sku": "RAD-116",
+    "description": "Bottle Sterilizer Box designed for daily ecommerce demand and admin workflow testing.",
+    "price": 81.24,
+    "images": [
+      "/images/all-img/p-4.png",
+      "/images/all-img/p-5.png"
+    ],
+    "category": "Hygiene & Personal Care",
+    "tags": [
+      "hygiene & personal care",
+      "new"
+    ],
+    "variants": [],
+    "stock": 63,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Bottle Sterilizer Box",
+    "metaDescription": "Bottle Sterilizer Box available in the Radios admin catalog.",
+    "createdAt": "2026-04-07T11:32:25.027Z",
+    "updatedAt": "2026-04-07T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_017",
+    "name": "Touchless Soap Dispenser",
+    "slug": "touchless-soap-dispenser",
+    "sku": "RAD-117",
+    "description": "Touchless Soap Dispenser designed for daily ecommerce demand and admin workflow testing.",
+    "price": 84.99,
+    "compareAtPrice": 97.74,
+    "images": [
+      "/images/all-img/p-5.png",
+      "/images/all-img/p-6.png"
+    ],
+    "category": "Baby Products",
+    "tags": [
+      "baby products",
+      "featured"
+    ],
+    "variants": [],
+    "stock": 0,
+    "lowStockThreshold": 10,
+    "status": "archived",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Touchless Soap Dispenser",
+    "metaDescription": "Touchless Soap Dispenser available in the Radios admin catalog.",
+    "createdAt": "2026-04-06T11:32:25.027Z",
+    "updatedAt": "2026-04-06T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_018",
+    "name": "Noise Cancelling Headphones",
+    "slug": "noise-cancelling-headphones",
+    "sku": "RAD-118",
+    "description": "Noise Cancelling Headphones designed for daily ecommerce demand and admin workflow testing.",
+    "price": 88.74,
+    "images": [
+      "/images/all-img/p-6.png",
+      "/images/all-img/p-1.png"
+    ],
+    "category": "Household Items",
+    "tags": [
+      "household items",
+      "new"
+    ],
+    "variants": [],
+    "stock": 9,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Noise Cancelling Headphones",
+    "metaDescription": "Noise Cancelling Headphones available in the Radios admin catalog.",
+    "createdAt": "2026-04-05T11:32:25.027Z",
+    "updatedAt": "2026-04-05T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_019",
+    "name": "Supplement Organizer Box",
+    "slug": "supplement-organizer-box",
+    "sku": "RAD-119",
+    "description": "Supplement Organizer Box designed for daily ecommerce demand and admin workflow testing.",
+    "price": 92.49,
+    "compareAtPrice": 106.36,
+    "images": [
+      "/images/all-img/p-1.png",
+      "/images/all-img/p-2.png"
+    ],
+    "category": "Electronics",
+    "tags": [
+      "electronics",
+      "featured"
+    ],
+    "variants": [],
+    "stock": 18,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Supplement Organizer Box",
+    "metaDescription": "Supplement Organizer Box available in the Radios admin catalog.",
+    "createdAt": "2026-04-04T11:32:25.027Z",
+    "updatedAt": "2026-04-04T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_020",
+    "name": "Kitchen Cleaning Cloth Set",
+    "slug": "kitchen-cleaning-cloth-set",
+    "sku": "RAD-120",
+    "description": "Kitchen Cleaning Cloth Set designed for daily ecommerce demand and admin workflow testing.",
+    "price": 96.24,
+    "images": [
+      "/images/all-img/p-2.png",
+      "/images/all-img/p-3.png"
+    ],
+    "category": "Mobile Accessories",
+    "tags": [
+      "mobile accessories",
+      "new"
+    ],
+    "variants": [],
+    "stock": 27,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Kitchen Cleaning Cloth Set",
+    "metaDescription": "Kitchen Cleaning Cloth Set available in the Radios admin catalog.",
+    "createdAt": "2026-04-03T11:32:25.027Z",
+    "updatedAt": "2026-04-03T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_021",
+    "name": "Car Charger Dual Port",
+    "slug": "car-charger-dual-port",
+    "sku": "RAD-121",
+    "description": "Car Charger Dual Port designed for daily ecommerce demand and admin workflow testing.",
+    "price": 99.99,
+    "compareAtPrice": 114.99,
+    "images": [
+      "/images/all-img/p-3.png",
+      "/images/all-img/p-4.png"
+    ],
+    "category": "Health Supplements",
+    "tags": [
+      "health supplements",
+      "featured"
+    ],
+    "variants": [],
+    "stock": 36,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Car Charger Dual Port",
+    "metaDescription": "Car Charger Dual Port available in the Radios admin catalog.",
+    "createdAt": "2026-04-02T11:32:25.027Z",
+    "updatedAt": "2026-04-02T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_022",
+    "name": "Baby Skin Care Bundle",
+    "slug": "baby-skin-care-bundle",
+    "sku": "RAD-122",
+    "description": "Baby Skin Care Bundle designed for daily ecommerce demand and admin workflow testing.",
+    "price": 103.74,
+    "images": [
+      "/images/all-img/p-4.png",
+      "/images/all-img/p-5.png"
+    ],
+    "category": "Hygiene & Personal Care",
+    "tags": [
+      "hygiene & personal care",
+      "new"
+    ],
+    "variants": [],
+    "stock": 45,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": false,
+    "metaTitle": "Baby Skin Care Bundle",
+    "metaDescription": "Baby Skin Care Bundle available in the Radios admin catalog.",
+    "createdAt": "2026-04-01T11:32:25.027Z",
+    "updatedAt": "2026-04-01T11:32:25.027Z",
+    "isVisible": false
+  },
+  {
+    "id": "seed_prod_023",
+    "name": "Multivitamin Gummies",
+    "slug": "multivitamin-gummies",
+    "sku": "RAD-123",
+    "description": "Multivitamin Gummies designed for daily ecommerce demand and admin workflow testing.",
+    "price": 107.49,
+    "compareAtPrice": 123.61,
+    "images": [
+      "/images/all-img/p-5.png",
+      "/images/all-img/p-6.png"
+    ],
+    "category": "Baby Products",
+    "tags": [
+      "baby products",
+      "featured"
+    ],
+    "variants": [],
+    "stock": 54,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Multivitamin Gummies",
+    "metaDescription": "Multivitamin Gummies available in the Radios admin catalog.",
+    "createdAt": "2026-03-31T11:32:25.027Z",
+    "updatedAt": "2026-03-31T11:32:25.027Z",
+    "isVisible": true
+  },
+  {
+    "id": "seed_prod_024",
+    "name": "Smart Home Plug Duo",
+    "slug": "smart-home-plug-duo",
+    "sku": "RAD-124",
+    "description": "Smart Home Plug Duo designed for daily ecommerce demand and admin workflow testing.",
+    "price": 111.24,
+    "images": [
+      "/images/all-img/p-6.png",
+      "/images/all-img/p-1.png"
+    ],
+    "category": "Household Items",
+    "tags": [
+      "household items",
+      "new"
+    ],
+    "variants": [],
+    "stock": 63,
+    "lowStockThreshold": 10,
+    "status": "active",
+    "featured": false,
+    "visible": true,
+    "metaTitle": "Smart Home Plug Duo",
+    "metaDescription": "Smart Home Plug Duo available in the Radios admin catalog.",
+    "createdAt": "2026-03-30T11:32:25.027Z",
+    "updatedAt": "2026-03-30T11:32:25.027Z",
+    "isVisible": true
+  }
+]
