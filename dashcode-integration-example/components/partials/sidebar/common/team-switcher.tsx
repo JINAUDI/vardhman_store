@@ -50,10 +50,10 @@ import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 
 const groups = [
     {
-        label: "Personal Account",
+        label: "Store",
         teams: [
             {
-                label: "Designing Workspace",
+                label: "Radios Store",
                 value: "personal",
             },
         ],
@@ -84,7 +84,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
     const [hoverConfig] = useMenuHoverConfig();
     const { hovered } = hoverConfig;
     const [profile, setProfile] = React.useState({
-        name: "Admin",
+        name: "Nitin Jain",
         image: "/images/avatar/avatar-1.png",
     });
     const [open, setOpen] = React.useState(false)
@@ -101,7 +101,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
             if (!isMounted || !data.user) return;
             const metadata = data.user.user_metadata || {};
             setProfile({
-                name: String(metadata.full_name || metadata.name || data.user.email || "Admin"),
+                name: String(metadata.full_name || metadata.name || data.user.email || "Nitin Jain"),
                 image: String(metadata.avatar_url || "/images/avatar/avatar-1.png"),
             });
         });
@@ -169,8 +169,10 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                                 </Avatar>
                                 <div className="flex-1 text-start w-[100px]">
 
-                                    <div className=" text-sm  font-semibold text-default-900">Codeshaper</div>
-                                    <div className=" text-xs font-normal text-default-500 dark:text-default-700 truncate ">{selectedTeam.label}</div>
+                                    <div className=" text-sm  font-semibold text-default-900">
+                                        {profile.name.includes("@") ? "Nitin Jain" : profile.name}
+                                    </div>
+                                    <div className=" text-xs font-normal text-default-500 dark:text-default-700 truncate ">Radios Store</div>
 
                                 </div>
                                 <div className="">

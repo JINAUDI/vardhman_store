@@ -780,8 +780,8 @@ export const dateRangeAtom = atomWithStorage<DateRange>("ecom_date_range", {
 // ============================================================
 export const authUserAtom = atomWithStorage<AuthUser | null>("ecom_auth_user", {
   id: "user_001",
-  name: "Mr. Dianne Russell",
-  email: "admin@dashcode.com",
+  name: "Nitin Jain",
+  email: "admin@radios.local",
   avatar: "/images/users/user-1.jpg",
   role: "admin",
 }, createSafeLocalStorage<AuthUser | null>());
@@ -852,6 +852,6 @@ export const pinnedMenuItemsAtom = atomWithStorage<string[]>(
 // ============================================================
 export const recentSearchesAtom = atomWithStorage<string[]>(
   "ecom_recent_searches",
-  ["Headphones", "Order #ORD-10001", "Esther Howard"],
+  ["Baby oil", "Electronics", "Pending orders"],
   createSafeLocalStorage<string[]>()
 );

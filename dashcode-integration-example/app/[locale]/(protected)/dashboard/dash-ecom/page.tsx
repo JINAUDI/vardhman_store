@@ -166,7 +166,7 @@ const EcommercePage = () => {
           <div className="max-w-[180px] relative z-10">
             <h4 className="text-xl font-medium text-primary-foreground dark:text-default-900 mb-2">
               <span className="block font-normal">Good Morning 👋</span>
-              <span className="block">Mr. Dianne Russell</span>
+              <span className="block">Mr. Nitin Jain</span>
             </h4>
             <p className="text-sm text-primary-foreground dark:text-default-900 font-normal">
               Here&apos;s what&apos;s happening with your store today.
