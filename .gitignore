@@ -31,3 +31,5 @@ build/
 .turbo/
 .cache/
 coverage/
+
+.vercel
