@@ -3,6 +3,7 @@ const Order = require("../models/Order");
 const Product = require("../models/Product");
 const asyncHandler = require("../utils/asyncHandler");
 const buildPagination = require("../utils/buildPagination");
+const { createShiprocketOrder, isShiprocketConfigured } = require("../services/shiprocketService");
 
 function ensureObjectId(id) {
   if (!mongoose.Types.ObjectId.isValid(id)) {
@@ -170,6 +171,36 @@ exports.createOrder = asyncHandler(async (req, res) => {
       await product.save();
     })
   );
+
+  if (isShiprocketConfigured()) {
+    try {
+      const shiprocketResult = await createShiprocketOrder({
+        order: Object.assign(order.toObject(), {
+          paymentMethod: req.body.paymentMethod || req.body.payment_method || "cash_on_delivery"
+        })
+      });
+      order.shippingProvider = {
+        name: "shiprocket",
+        status: "created",
+        orderId: shiprocketResult.summary.shiprocketOrderId,
+        shipmentId: shiprocketResult.summary.shipmentId,
+        awbCode: shiprocketResult.summary.awbCode,
+        courierName: shiprocketResult.summary.courierName,
+        syncedAt: new Date(),
+        response: shiprocketResult.response
+      };
+      await order.save();
+    } catch (error) {
+      console.warn("[Shiprocket] Order sync failed:", error.message);
+      order.shippingProvider = {
+        name: "shiprocket",
+        status: "failed",
+        syncedAt: new Date(),
+        errorMessage: error.message
+      };
+      await order.save();
+    }
+  }
 
   res.status(201).json(order);
 });

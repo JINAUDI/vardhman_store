@@ -6,6 +6,7 @@ const productRoutes = require("./routes/productRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const collectionRoutes = require("./routes/collectionRoutes");
 const discountRoutes = require("./routes/discountRoutes");
+const shiprocketRoutes = require("./routes/shiprocketRoutes");
 const requestLogger = require("./middleware/requestLogger");
 const { notFound, errorHandler } = require("./middleware/errorHandler");
 
@@ -68,6 +69,7 @@ app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/collections", collectionRoutes);
 app.use("/api/discounts", discountRoutes);
+app.use("/api/shiprocket", shiprocketRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

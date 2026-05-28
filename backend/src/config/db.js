@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
-async function connectDatabase(mongoUri) {
+async function connectDatabase(mongoUri, options = {}) {
   mongoose.set("strictQuery", true);
-  await mongoose.connect(mongoUri);
+  await mongoose.connect(mongoUri, options);
   console.log("[db] MongoDB connected");
 }
 

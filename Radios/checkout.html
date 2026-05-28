@@ -1511,6 +1511,86 @@
                 return attempt(0, null);
             }
 
+            function uniqueCheckoutStrings(values) {
+                return values.filter(function (value, index) {
+                    return value && values.indexOf(value) === index;
+                });
+            }
+
+            function getShiprocketApiCandidates() {
+                var currentOrigin = window.location.origin || '';
+                var sameOriginApi = currentOrigin ? currentOrigin.replace(/\/$/, '') + '/api' : '';
+
+                return uniqueCheckoutStrings([
+                    window.RADIOS_SHIPROCKET_API_BASE,
+                    window.RADIOS_API_BASE,
+                    window.RADIOS_DASHBOARD_API_BASE,
+                    localStorage.getItem('radios-api-base'),
+                    sameOriginApi,
+                    'http://localhost:5000/api',
+                    'http://127.0.0.1:5000/api',
+                    'http://localhost:3000/api',
+                    'http://127.0.0.1:3000/api'
+                ]).map(function (base) {
+                    return String(base || '').replace(/\/$/, '');
+                });
+            }
+
+            function postShiprocketOrder(base, order, createdOrder) {
+                return fetch(base + '/shiprocket/orders', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        order: order,
+                        createdOrder: createdOrder
+                    })
+                }).then(function (response) {
+                    return response.json().catch(function () {
+                        return {};
+                    }).then(function (data) {
+                        if (!response.ok) {
+                            var error = new Error(data.message || 'Shiprocket order sync failed.');
+                            error.status = response.status;
+                            error.payload = data;
+                            throw error;
+                        }
+
+                        localStorage.setItem('radios-api-base', base);
+                        return data;
+                    });
+                });
+            }
+
+            function syncOrderToShiprocket(order, createdOrder) {
+                if (!createdOrder || !createdOrder.id) {
+                    return Promise.resolve(null);
+                }
+
+                var candidates = getShiprocketApiCandidates();
+                var lastError = null;
+
+                function attempt(index) {
+                    if (index >= candidates.length) {
+                        throw lastError || new Error('Shiprocket API is unavailable.');
+                    }
+
+                    return postShiprocketOrder(candidates[index], order, createdOrder).catch(function (error) {
+                        lastError = error;
+
+                        if (error && error.status && error.status !== 404 && error.status !== 405) {
+                            throw error;
+                        }
+
+                        return attempt(index + 1);
+                    });
+                }
+
+                return attempt(0);
+            }
+
             async function placeOrder(event) {
                 if (event) event.preventDefault();
 
@@ -1631,9 +1711,18 @@
                         await window.RadiosInventory.completeOrder(createdOrder.id, state.cart);
                     }
 
+                    setMessage(checkoutMessage, 'Sending order to Shiprocket...', 'success');
+                    var shiprocketShipment = null;
+                    try {
+                        shiprocketShipment = await syncOrderToShiprocket(order, createdOrder);
+                    } catch (shiprocketError) {
+                        console.warn('Shiprocket order sync failed:', shiprocketError);
+                    }
+
                     localStorage.setItem(LAST_ORDER_KEY, JSON.stringify({
                         order: order,
-                        supabaseOrder: createdOrder
+                        supabaseOrder: createdOrder,
+                        shiprocketShipment: shiprocketShipment
                     }));
                     persistCheckoutCustomer(formData);
                     await saveCheckoutAddress(formData, signedInCustomer);

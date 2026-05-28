@@ -81,6 +81,21 @@ const orderSchema = new mongoose.Schema(
       trim: true,
       default: ""
     },
+    shippingProvider: {
+      name: { type: String, trim: true, default: "" },
+      status: {
+        type: String,
+        enum: ["", "created", "failed"],
+        default: ""
+      },
+      orderId: { type: String, trim: true, default: "" },
+      shipmentId: { type: String, trim: true, default: "" },
+      awbCode: { type: String, trim: true, default: "" },
+      courierName: { type: String, trim: true, default: "" },
+      syncedAt: { type: Date },
+      errorMessage: { type: String, trim: true, default: "" },
+      response: { type: mongoose.Schema.Types.Mixed }
+    },
     customer: {
       firstName: { type: String, required: true, trim: true },
       lastName: { type: String, required: true, trim: true },
