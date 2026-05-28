@@ -9,13 +9,15 @@ interface OverviewChartProps {
   height?: number;
   series?: number[];
   chartType?: "donut" | "pie" | "radialBar";
-  labels?: string[]
+  labels?: string[];
+  total?: number;
 }
 const OverviewChart = ({
   height = 373,
-  series = [44, 55, 67, 83],
+  series = [0],
   chartType = "radialBar",
-  labels = ["A", "B", "C", "D"]
+  labels = ["Orders"],
+  total = 0,
 
 }: OverviewChartProps) => {
   const [config] = useConfig();
@@ -49,7 +51,7 @@ const OverviewChart = ({
             label: "Total",
             color: mode === 'light' ? colors["default-600"] : colors["default-300"],
             formatter: function (w: any) {
-              return 249;
+              return total;
             }
           }
         }

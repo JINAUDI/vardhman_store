@@ -9,12 +9,14 @@ interface OverviewRadialChartProps {
   chartType?: "donut" | "pie" | "radialBar";
   labels?: string[];
   chartColor?: string[];
+  total?: number;
 }
 const OverviewRadialChart = ({
   height = 320,
-  series = [67],
+  series = [0],
   chartType = "radialBar",
   chartColor=["#2563eb"],
+  total = 0,
 }: OverviewRadialChartProps) => {
 
   const {theme:mode} = useTheme();
@@ -43,7 +45,7 @@ const OverviewRadialChart = ({
             label: "Total",
             color: mode === 'light' ? colors["default-600"] : colors["default-300"],
             formatter: function () {
-              return 249;
+              return total;
             }
           }
         }
