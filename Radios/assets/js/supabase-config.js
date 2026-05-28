@@ -1,4 +1,3 @@
 window.RADIOS_SUPABASE_URL = 'https://jonnadaoxbpicvmdumuo.supabase.co';
 window.RADIOS_SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impvbm5hZGFveGJwaWN2bWR1bXVvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzczNjA5NzAsImV4cCI6MjA5MjkzNjk3MH0.l5TTfVoAuaiEzzcio0xMbX2X8VXUwa57haKbYK4HsDk';
-// Set this to your deployed backend URL so checkout can create Shiprocket orders.
-// window.RADIOS_API_BASE = 'https://your-api-domain.example.com/api';
+window.RADIOS_API_BASE = 'https://vardhman-store-bxjl.vercel.app/api';
