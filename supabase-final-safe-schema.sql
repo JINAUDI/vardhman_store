@@ -1,5 +1,5 @@
-﻿-- =========================
--- RADIOS FINAL SAFE SCHEMA
+-- =========================
+-- Vardhman Store FINAL SAFE SCHEMA
 -- Generated from project Supabase scripts with corrected homepage_banners performance index.
 -- Safe to run more than once. Does not drop tables or delete existing data.
 -- =========================
@@ -659,7 +659,7 @@ notify pgrst, 'reload schema';
 
 -- ===== BEGIN supabase-order-management-safe.sql =====
 
--- Radios + Dashcode order lifecycle upgrade.
+-- Vardhman Store + Dashcode order lifecycle upgrade.
 -- Safe to run more than once. It only adds missing columns/tables/policies and backfills empty lifecycle fields.
 
 create extension if not exists pgcrypto;
@@ -820,7 +820,7 @@ notify pgrst, 'reload schema';
 
 -- ===== BEGIN supabase-storage-safe.sql =====
 
--- Supabase Storage setup for Radios storefront images.
+-- Supabase Storage setup for Vardhman Store storefront images.
 -- Run this in the Supabase SQL editor after supabase-auth-safe.sql so admin_users exists.
 
 create extension if not exists "pgcrypto";
@@ -1044,7 +1044,7 @@ notify pgrst, 'reload schema';
 
 -- ===== BEGIN supabase-inventory-safe.sql =====
 
--- Production inventory management for Radios.
+-- Production inventory management for Vardhman Store.
 -- Run this after supabase-orders.sql and supabase-auth-safe.sql.
 
 create extension if not exists "pgcrypto";
@@ -1712,7 +1712,7 @@ notify pgrst, 'reload schema';
 
 -- ===== BEGIN supabase-customer-accounts-safe.sql =====
 
--- Radios customer account area.
+-- Vardhman Store customer account area.
 -- Safe to run multiple times. Does not drop or delete existing data.
 
 create extension if not exists "pgcrypto";
@@ -2119,7 +2119,7 @@ notify pgrst, 'reload schema';
 
 -- ===== BEGIN supabase-storefront-badges.sql =====
 
--- Optional storefront merchandising badge fields for Radios products.
+-- Optional storefront merchandising badge fields for Vardhman Store products.
 -- Run this if product badges are managed directly in Supabase/Dashcode.
 
 alter table public.products add column if not exists badges text[] default '{}'::text[];
@@ -2175,7 +2175,7 @@ notify pgrst, 'reload schema';
 
 -- ===== BEGIN supabase-reviews-safe.sql =====
 
--- Radios verified product reviews.
+-- Vardhman Store verified product reviews.
 -- Safe to run more than once. It preserves existing review rows and upgrades the table shape.
 
 create extension if not exists pgcrypto;
@@ -2474,7 +2474,7 @@ notify pgrst, 'reload schema';
 
 -- ===== BEGIN supabase-smart-search-safe.sql =====
 
--- Radios smart product search.
+-- Vardhman Store smart product search.
 -- Safe to run more than once. Adds typo-tolerant search, analytics, and admin-editable keywords.
 
 create extension if not exists pgcrypto;
@@ -2731,7 +2731,7 @@ notify pgrst, 'reload schema';
 
 -- ===== BEGIN supabase-product-detail-safe.sql =====
 
--- Radios production product detail fields.
+-- Vardhman Store production product detail fields.
 -- Safe to run more than once. Adds gallery, specifications, FAQs, delivery, policy, warranty, brand, and manual related products.
 
 alter table public.products add column if not exists images text[] default '{}'::text[];
@@ -2837,7 +2837,7 @@ notify pgrst, 'reload schema';
 
 -- ===== BEGIN supabase-promotions-safe.sql =====
 
--- Radios advanced coupons and promotions engine.
+-- Vardhman Store advanced coupons and promotions engine.
 -- Safe to run more than once. Adds Supabase-backed promotion rules, checkout validation RPCs,
 -- redemption tracking, and admin-only management policies.
 
@@ -3483,7 +3483,7 @@ notify pgrst, 'reload schema';
 
 -- ===== BEGIN supabase-analytics-dashboard-safe.sql =====
 
--- Radios analytics dashboard setup.
+-- Vardhman Store analytics dashboard setup.
 -- Safe to run more than once. Adds passive storefront analytics events and admin-only read access.
 
 create extension if not exists pgcrypto;
@@ -3655,7 +3655,7 @@ notify pgrst, 'reload schema';
 
 -- ===== BEGIN supabase-seo-safe.sql =====
 
--- Radios ecommerce SEO system.
+-- Vardhman Store ecommerce SEO system.
 -- Safe to run more than once. Adds slug/meta fields for products and categories,
 -- normalizes existing slugs, grants admin update access, and refreshes PostgREST.
 
@@ -3891,7 +3891,7 @@ notify pgrst, 'reload schema';
 
 -- ===== BEGIN supabase-performance-safe.sql =====
 
--- Radios ecommerce performance indexes.
+-- Vardhman Store ecommerce performance indexes.
 -- Safe to run more than once. These indexes support paginated storefront listings,
 -- category/search filters, homepage banners, and Dashcode order/product tables.
 

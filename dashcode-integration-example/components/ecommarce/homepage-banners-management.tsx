@@ -257,7 +257,7 @@ const HomepageBannersManagement = () => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h2 className="text-2xl font-semibold text-default-900">Homepage Banners</h2>
-          <p className="text-sm text-default-500 mt-1">Manage every Radios homepage banner section from Supabase</p>
+          <p className="text-sm text-default-500 mt-1">Manage every Vardhman Store homepage banner section from Supabase</p>
           {loadError && <p className="text-xs text-destructive mt-1">{loadError}</p>}
         </div>
         <Button size="sm" className="gap-1" onClick={() => resetForm()}>

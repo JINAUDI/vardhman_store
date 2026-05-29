@@ -1,4 +1,4 @@
--- Safe Shiprocket integration fields for existing Radios Supabase projects.
+-- Safe Shiprocket integration fields for existing Vardhman Store Supabase projects.
 -- Run this once in Supabase SQL editor if you want Shiprocket IDs/status stored on orders.
 
 alter table public.orders add column if not exists shiprocket_order_id text;

@@ -1,4 +1,4 @@
-﻿import { Link } from '@/i18n/routing';
+import { Link } from '@/i18n/routing';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
@@ -8,7 +8,7 @@ const SupportPage = () => {
     <div className="space-y-5">
       <div>
         <h2 className="text-2xl font-semibold text-default-900">Support</h2>
-        <p className="text-sm text-default-500 mt-1">Radios admin support links for orders, customers, and storefront operations.</p>
+        <p className="text-sm text-default-500 mt-1">Vardhman Store admin support links for orders, customers, and storefront operations.</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -21,8 +21,8 @@ const SupportPage = () => {
             <CardDescription>For product, checkout, and account questions.</CardDescription>
           </CardHeader>
           <CardContent>
-            <a href="mailto:radios.support@gmail.com" className="text-sm font-medium text-primary hover:underline">
-              radios.support@gmail.com
+            <a href="mailto:vardhmanstore.support@gmail.com" className="text-sm font-medium text-primary hover:underline">
+              vardhmanstore.support@gmail.com
             </a>
           </CardContent>
         </Card>

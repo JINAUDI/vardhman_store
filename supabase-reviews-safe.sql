@@ -1,4 +1,4 @@
--- Radios verified product reviews.
+-- Vardhman Store verified product reviews.
 -- Safe to run more than once. It preserves existing review rows and upgrades the table shape.
 
 create extension if not exists pgcrypto;

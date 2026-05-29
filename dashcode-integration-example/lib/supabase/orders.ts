@@ -78,7 +78,7 @@ export function mapSupabaseOrderToOrder(row: JsonRecord): Order {
           status,
           statusType: "order",
           timestamp: createdAt,
-          note: "Order placed from Radios storefront",
+          note: "Order placed from Vardhman Store storefront",
         },
       ];
 

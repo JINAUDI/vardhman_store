@@ -1,4 +1,4 @@
--- Radios + Dashcode order lifecycle upgrade.
+-- Vardhman Store + Dashcode order lifecycle upgrade.
 -- Safe to run more than once. It only adds missing columns/tables/policies and backfills empty lifecycle fields.
 
 create extension if not exists pgcrypto;

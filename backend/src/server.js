@@ -16,7 +16,7 @@ async function startServer() {
   }
 
   app.listen(env.port, () => {
-    console.log(`[server] Radios API running on port ${env.port}`);
+    console.log(`[server] Vardhman Store API running on port ${env.port}`);
   });
 }
 

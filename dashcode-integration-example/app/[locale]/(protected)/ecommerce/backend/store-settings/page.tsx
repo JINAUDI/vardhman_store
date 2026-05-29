@@ -1,4 +1,4 @@
-﻿import { Link } from '@/i18n/routing';
+import { Link } from '@/i18n/routing';
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -13,7 +13,7 @@ const StoreSettingsPage = () => {
       <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
           <h2 className="text-2xl font-semibold text-default-900">Store Settings</h2>
-          <p className="text-sm text-default-500 mt-1">Operational settings for the Radios storefront and Dashcode admin.</p>
+          <p className="text-sm text-default-500 mt-1">Operational settings for the Vardhman Store storefront and Dashcode admin.</p>
         </div>
         <Link href="/ecommerce/backend/settings">
           <Button variant="outline" color="primary" className="gap-2">
@@ -32,7 +32,7 @@ const StoreSettingsPage = () => {
           <CardContent className="space-y-4">
             <div className="flex items-center justify-between rounded-md border border-default-200 p-3">
               <span className="text-sm text-default-600">Store name</span>
-              <span className="text-sm font-medium text-default-900">Radios</span>
+              <span className="text-sm font-medium text-default-900">Vardhman Store</span>
             </div>
             <div className="flex items-center justify-between rounded-md border border-default-200 p-3">
               <span className="text-sm text-default-600">Currency</span>

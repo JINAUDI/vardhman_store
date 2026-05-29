@@ -1,4 +1,4 @@
--- Supabase Storage setup for Radios storefront images.
+-- Supabase Storage setup for Vardhman Store storefront images.
 -- Run this in the Supabase SQL editor after supabase-auth-safe.sql so admin_users exists.
 
 create extension if not exists "pgcrypto";

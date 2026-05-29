@@ -213,7 +213,7 @@ const CategoriesManagement = () => {
               <h3 className="text-base font-semibold text-default-900">
                 {form.id ? "Edit Category" : "Add Category"}
               </h3>
-              <p className="text-xs text-default-500 mt-1">Use Font Awesome icon classes to preserve Radios styling.</p>
+              <p className="text-xs text-default-500 mt-1">Use Font Awesome icon classes to preserve Vardhman Store styling.</p>
             </div>
 
             <div className="space-y-2">
@@ -245,7 +245,7 @@ const CategoriesManagement = () => {
             <div className="flex items-center justify-between rounded-lg border border-default-200 bg-default-50 p-3">
               <div>
                 <p className="text-sm font-medium text-default-900">Active</p>
-                <p className="text-xs text-default-500">Visible on Radios storefront</p>
+                <p className="text-xs text-default-500">Visible on Vardhman Store storefront</p>
               </div>
               <Switch checked={form.isActive} onCheckedChange={(checked) => setForm((current) => ({ ...current, isActive: checked }))} />
             </div>

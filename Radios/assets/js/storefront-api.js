@@ -86,7 +86,7 @@
   function debugLog() {
     if (window.console && typeof window.console.log === "function") {
       var args = Array.prototype.slice.call(arguments);
-      args.unshift("[Radios Store]");
+      args.unshift("[Vardhman Store]");
       window.console.log.apply(window.console, args);
     }
   }
@@ -762,8 +762,8 @@
 
   function applySeoMeta(options) {
     options = options || {};
-    var title = truncateSeoText(options.title || document.title || "Radios", 70) || "Radios";
-    var description = truncateSeoText(options.description || "Shop live Radios products with INR pricing, reliable delivery, and secure checkout.", 160);
+    var title = truncateSeoText(options.title || document.title || "Vardhman Store", 70) || "Vardhman Store";
+    var description = truncateSeoText(options.description || "Shop live Vardhman Store products with INR pricing, reliable delivery, and secure checkout.", 160);
     var url = getAbsoluteStorefrontUrl(options.canonicalUrl || window.location.href);
     var image = options.image ? getAbsoluteStorefrontUrl(options.image) : getAbsoluteStorefrontUrl("assets/img/logo/logo.svg");
     var type = options.type || "website";
@@ -785,7 +785,7 @@
   function applyDefaultSeo() {
     var descriptionTag = document.querySelector('meta[name="description"]');
     applySeoMeta({
-      title: document.title || "Radios",
+      title: document.title || "Vardhman Store",
       description: descriptionTag ? descriptionTag.getAttribute("content") : "",
       canonicalUrl: window.location.href,
       type: "website"
@@ -793,7 +793,7 @@
   }
 
   function getProductSeoTitle(product) {
-    return product.meta_title || product.metaTitle || (getProductName(product) + " - Radios");
+    return product.meta_title || product.metaTitle || (getProductName(product) + " - Vardhman Store");
   }
 
   function getProductSeoDescription(product) {
@@ -802,7 +802,7 @@
       product.description ||
       product.desc ||
       product.subtitle ||
-      (getProductName(product) + " is available from Radios with live pricing and checkout.");
+      (getProductName(product) + " is available from Vardhman Store with live pricing and checkout.");
   }
 
   function getProductSeoImage(product) {
@@ -814,14 +814,14 @@
   }
 
   function getCategorySeoTitle(category) {
-    return category.meta_title || category.metaTitle || (category.name + " - Radios");
+    return category.meta_title || category.metaTitle || (category.name + " - Vardhman Store");
   }
 
   function getCategorySeoDescription(category) {
     return category.meta_description ||
       category.metaDescription ||
       category.description ||
-      ("Browse " + category.name + " products from Radios.");
+      ("Browse " + category.name + " products from Vardhman Store.");
   }
 
   function getCategorySeoImage(category) {
@@ -895,7 +895,7 @@
           "@type": "Review",
           author: {
             "@type": "Person",
-            name: review.customer_name || "Radios customer"
+            name: review.customer_name || "Vardhman Store customer"
           },
           datePublished: reviewDate && !Number.isNaN(reviewDate.getTime()) ? reviewDate.toISOString().slice(0, 10) : undefined,
           reviewBody: truncateSeoText(review.comment || "", 500),
@@ -2592,7 +2592,7 @@
       if (title) title.textContent = category.name;
       if (breadcrumb) breadcrumb.textContent = category.name;
       if (description) {
-        description.textContent = category.description || "Browse " + category.name + " products from Radios.";
+        description.textContent = category.description || "Browse " + category.name + " products from Vardhman Store.";
       }
     }
 
@@ -3664,7 +3664,7 @@
           });
       })
       .catch(function (error) {
-        console.warn("[Radios Store] Unable to merge guest wishlist into signed-in account.", error);
+        console.warn("[Vardhman Store] Unable to merge guest wishlist into signed-in account.", error);
         return identity;
       });
   }
@@ -3897,7 +3897,7 @@
         });
       })
       .catch(function (error) {
-        console.warn("[Radios Store] Wishlist fetch failed; using local cache.", error);
+        console.warn("[Vardhman Store] Wishlist fetch failed; using local cache.", error);
         var fallbackIds = readWishlistFallback();
         setWishlistState(fallbackIds);
 
@@ -5736,7 +5736,7 @@
     var specButton = document.getElementById("tab-two");
     var supportButton = document.getElementById("pills-profile-tab");
     var productName = getProductName(product);
-    var productDescription = product.description || product.desc || product.subtitle || "Live product details from the Radios catalog.";
+    var productDescription = product.description || product.desc || product.subtitle || "Live product details from the Vardhman Store catalog.";
     var specs = getProductSpecifications(product);
     var specKeys = Object.keys(specs);
     var faqs = getProductFaqs(product);
@@ -5777,7 +5777,7 @@
         }).join("") + '</div>' : '') +
         '<div class="contact-info__content product-support-panel">' +
           '<h3>Need help with ' + escapeHtml(productName) + '?</h3>' +
-          '<p>Contact Radios support for product questions, checkout help, order tracking, or returns. Include your order number if this product is part of an existing order.</p>' +
+          '<p>Contact Vardhman Store support for product questions, checkout help, order tracking, or returns. Include your order number if this product is part of an existing order.</p>' +
           (product.return_policy ? '<p><strong>Returns:</strong> ' + escapeHtml(product.return_policy) + '</p>' : '') +
           (product.warranty ? '<p><strong>Warranty:</strong> ' + escapeHtml(product.warranty) + '</p>' : '') +
           '<a class="thm-btn thm-btn__2 no-icon" href="contact.html"><span class="btn-wrap"><span>Contact Support</span><span>Contact Support</span></span></a>' +
@@ -6272,7 +6272,7 @@
     var modelOptions = getProductModelOptions(product);
     var visibleTags = getVisibleProductTags(product);
     var productName = getProductName(product);
-    var productDescription = product.description || product.desc || product.subtitle || "Live product details from the Radios catalog.";
+    var productDescription = product.description || product.desc || product.subtitle || "Live product details from the Vardhman Store catalog.";
     var breadcrumbEnd = document.querySelector(".radiosbcrumb-end span");
     var ratingText = document.querySelector(".product-details .rating span");
     if (titleEl) {
@@ -6300,7 +6300,7 @@
     renderProductGallery(product);
 
     if (ratingText) {
-      ratingText.textContent = categoryName || "Radios catalog product";
+      ratingText.textContent = categoryName || "Vardhman Store catalog product";
     }
 
     if (descEl) {
@@ -6403,7 +6403,7 @@
     renderProductTabs(product);
 
     var shareUrl = encodeURIComponent(window.location.href);
-    var shareText = encodeURIComponent(productName + " on Radios");
+    var shareText = encodeURIComponent(productName + " on Vardhman Store");
     var shareLinks = document.querySelectorAll(".product-share-wrap a");
     if (shareLinks[0]) shareLinks[0].href = "https://www.facebook.com/sharer/sharer.php?u=" + shareUrl;
     if (shareLinks[1]) shareLinks[1].href = "https://www.instagram.com/";
@@ -6500,7 +6500,7 @@
         '<article class="review-card">' +
           '<div class="review-card__head">' +
             '<div>' +
-              '<strong>' + escapeHtml(review.customer_name || "Radios customer") + '</strong>' +
+              '<strong>' + escapeHtml(review.customer_name || "Vardhman Store customer") + '</strong>' +
               '<div class="review-card__rating">' + buildRatingStars(review.rating) + '</div>' +
             '</div>' +
             '<div class="review-card__meta">' +
@@ -6624,7 +6624,7 @@
       [stored.firstName, stored.lastName].filter(Boolean).join(" ") ||
       metadata.full_name ||
       metadata.name ||
-      (email ? email.split("@")[0].replace(/[._-]+/g, " ") : "Radios customer");
+      (email ? email.split("@")[0].replace(/[._-]+/g, " ") : "Vardhman Store customer");
   }
 
   function uploadReviewImages(files, user, productId) {
@@ -6760,7 +6760,7 @@
           setReviewFormStatus(form, "Your review is awaiting approval", "success");
           var formWrap = document.querySelector("[data-product-review-form]");
           if (formWrap) {
-            formWrap.innerHTML = '<div class="review-form-state is-success"><strong>Your review is awaiting approval</strong><p>Thanks for sharing your experience. Radios will publish it after moderation.</p></div>';
+            formWrap.innerHTML = '<div class="review-form-state is-success"><strong>Your review is awaiting approval</strong><p>Thanks for sharing your experience. Vardhman Store will publish it after moderation.</p></div>';
           }
         })
         .catch(function (error) {
@@ -6802,11 +6802,11 @@
         }
 
         if (eligibility.reason === "error") {
-          formWrap.innerHTML = '<div class="review-form-state"><strong>Unable to check review eligibility</strong><p>Please refresh the page or contact Radios support if this continues.</p></div>';
+          formWrap.innerHTML = '<div class="review-form-state"><strong>Unable to check review eligibility</strong><p>Please refresh the page or contact Vardhman Store support if this continues.</p></div>';
           return;
         }
 
-        formWrap.innerHTML = '<div class="review-form-state"><strong>Only verified buyers can review this product</strong><p>Reviews open after a delivered order for this item is linked to your Radios account.</p></div>';
+        formWrap.innerHTML = '<div class="review-form-state"><strong>Only verified buyers can review this product</strong><p>Reviews open after a delivered order for this item is linked to your Vardhman Store account.</p></div>';
       });
     });
   }
@@ -6919,7 +6919,7 @@
           enhanceExistingImages(relatedList);
           applyWishlistButtonStates();
         } else if (relatedList) {
-          relatedList.innerHTML = '<li class="product"><div class="product-info"><h2 class="product__title">No related products available yet</h2><p class="product-description"><a href="shop-left-sidebar.html">Browse the full Radios catalog</a> for more options.</p></div></li>';
+          relatedList.innerHTML = '<li class="product"><div class="product-info"><h2 class="product__title">No related products available yet</h2><p class="product-description"><a href="shop-left-sidebar.html">Browse the full Vardhman Store catalog</a> for more options.</p></div></li>';
         }
 
         return renderRecentlyViewedProducts(payload.product);
@@ -6927,7 +6927,7 @@
       .catch(function (error) {
         debugLog("Failed to load product:", error.message);
         var notFound = /not found/i.test(error.message || "");
-        productDetailsWrap.innerHTML = "<h2>" + (notFound ? "Product not found" : "Unable to load product") + "</h2><p>" + (notFound ? "This product is no longer available in the Radios storefront." : error.message) + "</p>";
+        productDetailsWrap.innerHTML = "<h2>" + (notFound ? "Product not found" : "Unable to load product") + "</h2><p>" + (notFound ? "This product is no longer available in the Vardhman Store storefront." : error.message) + "</p>";
         var galleryWrap = document.querySelector(".product-single-wrap");
         if (galleryWrap) {
           galleryWrap.innerHTML = '<div class="product-detail-empty-state">Product image unavailable</div>';
@@ -7726,7 +7726,7 @@
 
       syncWishlistToggle(wishlistProductId, shouldAddToWishlist)
         .catch(function (error) {
-          console.warn("[Radios Store] Wishlist update failed.", error);
+          console.warn("[Vardhman Store] Wishlist update failed.", error);
           setWishlistProductState(wishlistProductId, wasWishlisted);
         })
         .then(function () {

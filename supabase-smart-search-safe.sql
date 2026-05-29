@@ -1,4 +1,4 @@
--- Radios smart product search.
+-- Vardhman Store smart product search.
 -- Safe to run more than once. Adds typo-tolerant search, analytics, and admin-editable keywords.
 
 create extension if not exists pgcrypto;

@@ -1,4 +1,4 @@
--- Radios ecommerce SEO system.
+-- Vardhman Store ecommerce SEO system.
 -- Safe to run more than once. Adds slug/meta fields for products and categories,
 -- normalizes existing slugs, grants admin update access, and refreshes PostgREST.
 

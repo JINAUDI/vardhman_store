@@ -1,4 +1,4 @@
--- Radios production product detail fields.
+-- Vardhman Store production product detail fields.
 -- Safe to run more than once. Adds gallery, specifications, FAQs, delivery, policy, warranty, brand, and manual related products.
 
 alter table public.products add column if not exists images text[] default '{}'::text[];

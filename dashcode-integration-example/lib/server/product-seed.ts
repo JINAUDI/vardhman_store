@@ -74,7 +74,7 @@ export function createSeedProducts(): Product[] {
       visible: stock > 0 && index % 7 !== 0,
       isVisible: stock > 0 && index % 7 !== 0,
       metaTitle: name,
-      metaDescription: `${name} available in the Radios admin catalog.`,
+      metaDescription: `${name} available in the Vardhman Store admin catalog.`,
       createdAt,
       updatedAt: createdAt,
     };

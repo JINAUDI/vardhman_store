@@ -643,7 +643,7 @@ from (
     ('Mid Page Offer', 'Exclusive storewide offers', 'Buy Now', 'shop-left-sidebar.html', 'assets/img/bg/bg_01.jpg', null, 'mid_offer', 1),
     ('Deals & Offers', 'Limited time savings', 'Shop Now', 'shop-left-sidebar.html', 'assets/img/bg/bg_03.jpg', null, 'deals', 1),
     ('Trending Products', 'Best seller picks this week', 'Shop Now', 'shop-left-sidebar.html', 'assets/img/bg/bg_05.jpg', null, 'trending', 1),
-    ('Bottom Promotion', 'Discover more Radios deals', 'Shop Now', 'shop-left-sidebar.html', 'assets/img/bg/bg_05.jpg', null, 'bottom_promo', 1)
+    ('Bottom Promotion', 'Discover more Vardhman Store deals', 'Shop Now', 'shop-left-sidebar.html', 'assets/img/bg/bg_05.jpg', null, 'bottom_promo', 1)
 ) as seed(title, subtitle, button_text, button_link, image_url, category_slug, section_key, sort_order)
 left join public.categories on categories.slug = seed.category_slug
 where (seed.category_slug is null or categories.id is not null)

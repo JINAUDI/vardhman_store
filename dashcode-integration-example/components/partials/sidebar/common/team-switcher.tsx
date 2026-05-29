@@ -33,7 +33,7 @@ const groups = [
         label: "Store",
         teams: [
             {
-                label: "Radios Store",
+                label: "Vardhman Store",
                 value: "personal",
             },
         ],
@@ -148,7 +148,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                                         {profile.name.includes("@") ? "Nitin Jain" : profile.name}
                                     </div>
                                     <div className="text-xs font-normal text-default-500 dark:text-default-700 truncate">
-                                        Radios Store
+                                        Vardhman Store
                                     </div>
                                 </div>
                                 <ChevronsUpDown className="ml-auto h-5 w-5 shrink-0 text-default-500 dark:text-default-700" />

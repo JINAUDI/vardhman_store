@@ -180,7 +180,7 @@ function toForm(discount: Coupon): DiscountFormState {
 function toPayload(form: DiscountFormState): Partial<Coupon> {
   const discountCode =
     form.code?.trim().toUpperCase() ||
-    `RADIOS-${Math.random().toString(36).substring(2, 8).toUpperCase()}`;
+    `VARDHMAN-${Math.random().toString(36).substring(2, 8).toUpperCase()}`;
 
   return {
     title: form.title.trim() || undefined,

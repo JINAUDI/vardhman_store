@@ -1,4 +1,4 @@
--- Optional storefront merchandising badge fields for Radios products.
+-- Optional storefront merchandising badge fields for Vardhman Store products.
 -- Run this if product badges are managed directly in Supabase/Dashcode.
 
 alter table public.products add column if not exists badges text[] default '{}'::text[];

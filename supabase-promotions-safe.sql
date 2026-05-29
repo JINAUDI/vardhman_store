@@ -1,4 +1,4 @@
--- Radios advanced coupons and promotions engine.
+-- Vardhman Store advanced coupons and promotions engine.
 -- Safe to run more than once. Adds Supabase-backed promotion rules, checkout validation RPCs,
 -- redemption tracking, and admin-only management policies.
 

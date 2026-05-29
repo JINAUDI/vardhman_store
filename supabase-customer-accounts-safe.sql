@@ -1,4 +1,4 @@
--- Radios customer account area.
+-- Vardhman Store customer account area.
 -- Safe to run multiple times. Does not drop or delete existing data.
 
 create extension if not exists "pgcrypto";

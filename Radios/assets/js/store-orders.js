@@ -114,7 +114,7 @@
     try {
       return await updateOrderViaSupabase(orderId, payload);
     } catch (supabaseError) {
-      console.warn("[Radios Orders] Supabase order update failed, trying API fallback:", supabaseError.message);
+      console.warn("[Vardhman Store Orders] Supabase order update failed, trying API fallback:", supabaseError.message);
     }
 
     var candidates = getDashboardApiCandidates();
@@ -340,7 +340,7 @@
     authUserId = "";
     showEmptyState(
       "Sign in to view your orders",
-      "Use your Radios account so we can show only the orders connected to your email.",
+      "Use your Vardhman Store account so we can show only the orders connected to your email.",
       "Sign In",
       "account.html?redirect=my-orders.html"
     );

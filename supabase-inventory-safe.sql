@@ -1,4 +1,4 @@
--- Production inventory management for Radios.
+-- Production inventory management for Vardhman Store.
 -- Run this after supabase-orders.sql and supabase-auth-safe.sql.
 
 create extension if not exists "pgcrypto";

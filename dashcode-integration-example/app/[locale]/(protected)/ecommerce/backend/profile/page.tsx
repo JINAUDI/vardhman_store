@@ -1,4 +1,4 @@
-﻿import { Link } from '@/i18n/routing';
+import { Link } from '@/i18n/routing';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
@@ -16,7 +16,7 @@ const ProfilePage = async () => {
     <div className="space-y-5">
       <div>
         <h2 className="text-2xl font-semibold text-default-900">Profile</h2>
-        <p className="text-sm text-default-500 mt-1">Manage the active Dashcode admin account for Radios.</p>
+        <p className="text-sm text-default-500 mt-1">Manage the active Dashcode admin account for Vardhman Store.</p>
       </div>
 
       <Card>

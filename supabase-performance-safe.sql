@@ -1,4 +1,4 @@
--- Radios ecommerce performance indexes.
+-- Vardhman Store ecommerce performance indexes.
 -- Safe to run more than once. These indexes support paginated storefront listings,
 -- category/search filters, homepage banners, and Dashcode order/product tables.
 

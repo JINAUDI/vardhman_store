@@ -112,7 +112,7 @@
         '</aside>' +
         '<main class="radios-account-main">' +
           '<nav class="radios-account-mobile-tabs">' + nav + '</nav>' +
-          '<header class="radios-account-header"><span>Radios Account</span><h1>' + escapeHtml(title) + '</h1><p>' + escapeHtml(copy) + '</p></header>' +
+          '<header class="radios-account-header"><span>Vardhman Store Account</span><h1>' + escapeHtml(title) + '</h1><p>' + escapeHtml(copy) + '</p></header>' +
           content +
         '</main>' +
       '</div>';

@@ -1,4 +1,4 @@
--- Radios analytics dashboard setup.
+-- Vardhman Store analytics dashboard setup.
 -- Safe to run more than once. Adds passive storefront analytics events and admin-only read access.
 
 create extension if not exists pgcrypto;

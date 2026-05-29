@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -135,7 +135,7 @@ const CustomerListPage = () => {
 
     const title = window.prompt("Notification title", "Account update");
     if (!title || !title.trim()) return;
-    const message = window.prompt("Message", "We have an update for your Radios account.");
+    const message = window.prompt("Message", "We have an update for your Vardhman Store account.");
     if (message === null) return;
 
     try {

@@ -1,6 +1,6 @@
-# Radios API
+# Vardhman Store API
 
-Shared backend for the Radios storefront and Dashcode admin dashboard.
+Shared backend for the Vardhman Store storefront and Dashcode admin dashboard.
 
 ## Run
 
